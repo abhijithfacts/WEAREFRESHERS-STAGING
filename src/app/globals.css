@@ -58,3 +58,7 @@ html {
   scrollbar-width: thin;
   scrollbar-color: var(--primary) var(--background);
 }
+
+.page-wrap {
+  width: 100%;
+}

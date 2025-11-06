@@ -1,0 +1,49 @@
+.supTodayContainer {
+  background-image: url("/images/supToday-Bg.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 510px;
+  padding: 50px;
+}
+
+.supTodayContenHolder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 60px;
+}
+
+.supTitle {
+  margin: 0;
+  font-size: 50px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.supInput {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: #ffffff9f;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  outline: none;
+  width: 45%;
+}
+
+.supInput::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.supButton {
+  width: 400px;
+}
