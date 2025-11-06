@@ -2,6 +2,8 @@ import { Rubik } from "next/font/google";
 import ProgressBar from "../components/ProgressBar";
 import "../app/globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Footer from "../components/Footer/Footer";
+import Copyright from "../components/Copyright/Copyright";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -21,6 +23,8 @@ export default function RootLayout({ children }) {
         <SpeedInsights />
         <ProgressBar />
         <main>{children}</main>
+        <Footer />
+        <Copyright />
       </body>
     </html>
   );

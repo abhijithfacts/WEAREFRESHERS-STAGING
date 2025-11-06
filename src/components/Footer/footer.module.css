@@ -1,0 +1,39 @@
+.footerContainer {
+  background: #fff;
+  padding: 60px 20px;
+  width: 100%;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+.footerItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerLogo {
+  width: 200px;
+  height: auto;
+  max-height: 60px;
+}
+
+.footerHeadings {
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.footerParas {
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 18px;
+
+  font-weight: 300;
+}

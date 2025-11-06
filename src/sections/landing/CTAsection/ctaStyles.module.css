@@ -23,6 +23,8 @@
 }
 
 .ctaPara {
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 .ctaButtonHolder {
@@ -33,7 +35,7 @@
 }
 
 .ctaImage {
-  width: 440px;
+  width: 540px;
   height: auto;
   position: absolute;
   right: 0;

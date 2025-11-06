@@ -1,0 +1,13 @@
+.copyrightContainer {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  background: #c9deb1;
+  padding: 8px 0px;
+}
+
+.copyrightPara {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
