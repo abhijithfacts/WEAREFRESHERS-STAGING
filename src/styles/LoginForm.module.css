@@ -73,7 +73,7 @@
   font-size: 30px;
   color: #000;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -233,12 +233,6 @@
 .arrowIcon:hover {
   transform: translateX(2px);
 }
-
-
-
-
-
-
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
