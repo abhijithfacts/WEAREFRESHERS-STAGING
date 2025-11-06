@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./signuptoday.module.css";
-import Button from "../Buttons/Button";
+import Button from "../../../components/Buttons/Button";
 
 const SignUpToday = () => {
   return (

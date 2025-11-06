@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./lookingfresher.module.css";
 import Image from "next/image";
-import Button from "../Buttons/Button";
+import Button from "../../../components/Buttons/Button";
 
 const LookingFresher = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ctaStyles.module.css";
-import Button from "../Buttons/Button";
+import Button from "../../../components/Buttons/Button";
 import Image from "next/image";
 
 const CTAsection = () => {

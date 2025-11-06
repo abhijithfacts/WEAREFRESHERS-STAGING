@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./heroBanner.module.css";
-import Button from "../Buttons/Button";
+import Button from "../../../components/Buttons/Button";
 
 const HeroBanner = () => {
   return (

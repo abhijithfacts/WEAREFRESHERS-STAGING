@@ -1,11 +1,12 @@
 import React from "react";
-import HeroBanner from "../components/HeroBanner/HeroBanner";
 import Header from "../components/Header/Header";
-import About from "../components/AboutSection/About";
-import CTAsection from "../components/CTAsection/CTAsection";
-import LookingFresher from "../components/LookingFresher/LookingFresher";
-import SignUpToday from "../components/SignUpToday/SignUpToday";
 import StickyMenu from "../components/StickyMenu/StickyMenu";
+import HeroBanner from "../sections/landing/HeroBanner/HeroBanner";
+import About from "../sections/landing/AboutSection/About";
+import CTAsection from "../sections/landing/CTAsection/CTAsection";
+import LookingFresher from "../sections/landing/LookingFresher/LookingFresher";
+import SignUpToday from "../sections/landing/SignUpToday/SignUpToday";
+import FresherVoice from "../sections/landing/FresherVoice/FresherVoice";
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
       <CTAsection />
       <LookingFresher />
       <SignUpToday />
+      <FresherVoice />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 .heroBackground {
-  background-image: url("/images/1.jpg");
-  /* background-image: url("/images/HeroSection.png"); */
+  /* background-image: url("/images/1.jpg"); */
+  background-image: url("/images/2.jpg");
+  /* background-image: url("/images/Fresher Assets-33.png"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

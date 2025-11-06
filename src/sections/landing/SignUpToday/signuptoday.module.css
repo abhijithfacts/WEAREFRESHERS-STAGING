@@ -1,6 +1,7 @@
 .supTodayContainer {
-  background-image: url("/images/supToday-Bg.jpg");
-  background-size: contain;
+  position: relative;
+  background-image: url("/images/Fresher Assets-23.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-width: 100%;
@@ -9,6 +10,20 @@
   align-items: center;
   height: 510px;
   padding: 50px;
+  overflow: hidden;
+}
+
+.supTodayContainer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.44);
+  z-index: 1;
+}
+
+.supTodayContainer > * {
+  position: relative;
+  z-index: 2;
 }
 
 .supTodayContenHolder {
