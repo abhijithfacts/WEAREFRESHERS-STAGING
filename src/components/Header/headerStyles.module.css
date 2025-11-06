@@ -1,0 +1,58 @@
+.headerContainer {
+  position: sticky;
+  top: 0;
+  right: 0;
+  height: auto;
+  min-width: 100%;
+  background: #fff;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 40px;
+  padding-right: 50px;
+  z-index: 1000;
+}
+
+.headerLogo {
+  width: 150px;
+  height: auto;
+}
+
+.userGreet {
+  margin: 0px;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.headerTopSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerNavSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.headerNavItems {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.navItem {
+  margin: 0px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+.navItem:hover {
+  color: #c9deb1;
+}

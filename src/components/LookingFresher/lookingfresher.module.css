@@ -1,0 +1,100 @@
+.sectionContainer {
+  display: flex;
+  width: 100%;
+  padding: 0px 40px;
+  justify-content: space-between;
+  /* justify-content: space-evenly; */
+}
+
+.firstSection {
+  padding: 40px 0px;
+}
+
+.sectionTitle {
+  margin: 0px;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.verticalLine {
+  width: 2px;
+  height: auto;
+  background: #c9deb1;
+  margin-right: 80px;
+}
+
+.sectionTitleSL {
+  margin: 0px;
+  font-size: 50px;
+  font-weight: 300;
+  display: flex;
+
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.plantImage {
+  width: 300px;
+  height: auto;
+}
+
+.secondSection {
+}
+
+.thirdSection {
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.rowWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.greenLineHorizontal {
+  height: 2px;
+  min-width: 100%;
+  background: #c9deb1;
+}
+
+.numberWrap {
+  margin: 0;
+  font-weight: 300;
+  font-size: 60px;
+}
+
+.rowTop {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.textHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rowHeading {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: end;
+  letter-spacing: 1px;
+}
+
+.rowParagraph {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: end;
+}

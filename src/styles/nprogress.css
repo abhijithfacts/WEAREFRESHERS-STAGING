@@ -1,0 +1,14 @@
+/* Progress bar color */
+#nprogress .bar {
+  background: #c5dca0 !important;
+  height: 3px !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #c5dca0 !important;
+  border-left-color: #c5dca0 !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #c5dca0, 0 0 5px #c5dca0;
+}

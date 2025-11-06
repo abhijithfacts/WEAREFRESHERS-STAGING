@@ -1,0 +1,11 @@
+.styledButton {
+  width: auto;
+  padding: 12px 40px;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  cursor: pointer;
+}

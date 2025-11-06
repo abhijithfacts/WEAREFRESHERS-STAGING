@@ -1,0 +1,41 @@
+.ctaContainer {
+  width: 100%;
+  padding: 40px;
+  background: #c9deb1;
+  min-height: 300px;
+  max-height: 600px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.ctaLeftSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ctaHeading {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.ctaPara {
+}
+
+.ctaButtonHolder {
+  width: 300px;
+}
+
+.ctaRightSection {
+}
+
+.ctaImage {
+  width: 440px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
