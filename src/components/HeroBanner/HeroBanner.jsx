@@ -9,8 +9,8 @@ const HeroBanner = () => {
       <div className={styles.heroBackground}>
         <div className={styles.heroContent}>
           <h2 className={styles.heroText}>
-            Connecting flower shops and web shops
-            <br /> with premium blooms, straight from the farm.
+            Connecting flower shops and
+            <br /> web shops with premium blooms, <br /> straight from the farm.
           </h2>
           <div className={styles.heroButtonContainer}>
             <Button text="Explore Farms" />
