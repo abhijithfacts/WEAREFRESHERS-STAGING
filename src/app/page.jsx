@@ -7,6 +7,7 @@ import CTAsection from "../sections/landing/CTAsection/CTAsection";
 import LookingFresher from "../sections/landing/LookingFresher/LookingFresher";
 import SignUpToday from "../sections/landing/SignUpToday/SignUpToday";
 import FresherVoice from "../sections/landing/FresherVoice/FresherVoice";
+import NeedHelp from "../sections/landing/NeedHelp/NeedHelp";
 
 const page = () => {
   return (
@@ -19,6 +20,7 @@ const page = () => {
       <LookingFresher />
       <SignUpToday />
       <FresherVoice />
+      <NeedHelp />
     </div>
   );
 };
