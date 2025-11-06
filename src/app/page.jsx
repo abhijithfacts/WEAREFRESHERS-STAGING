@@ -5,11 +5,13 @@ import About from "../components/AboutSection/About";
 import CTAsection from "../components/CTAsection/CTAsection";
 import LookingFresher from "../components/LookingFresher/LookingFresher";
 import SignUpToday from "../components/SignUpToday/SignUpToday";
+import StickyMenu from "../components/StickyMenu/StickyMenu";
 
 const page = () => {
   return (
     <div className="page-wrap">
       <Header />
+      <StickyMenu />
       <HeroBanner />
       <About />
       <CTAsection />

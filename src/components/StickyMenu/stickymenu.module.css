@@ -1,0 +1,23 @@
+.menuWrapper {
+  position: fixed;
+  width: 60px;
+  top: 120px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 10px 0px 0px 10px;
+  background: #c9deb1;
+  color: #000;
+  z-index: 999;
+}
+
+.icon {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
