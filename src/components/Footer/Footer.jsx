@@ -5,19 +5,35 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className={styles.footerContainer}>
-      <div className={styles.logoContainer}>
-        <Image
-          src="/images/desktop_nav_logo.png"
-          width={80}
-          height={40}
-          alt="footer-logo"
-          className={styles.footerLogo}
+      <Image
+        src="/images/footer-logo.png"
+        width={80}
+        height={40}
+        alt="footer-logo"
+        className={styles.footerLogo}
+      />
+      <div className={styles.footerItemsContainer}>
+        <FooterSecs
+          data={{
+            heading: "Company",
+            data: ["About", "Overview", "Categories", "Special Orders"],
+          }}
         />
-
-        <FooterSecs />
-        <FooterSecs />
-        <FooterSecs />
-        <FooterSecs />
+        <FooterSecs
+          data={{ heading: "Useful links", data: ["FAQ", "Account"] }}
+        />
+        <FooterSecs
+          data={{
+            heading: "Help",
+            data: ["Privacy Policy", "Ordering Process", "Terms & Conditions"],
+          }}
+        />
+        <FooterSecs
+          data={{
+            heading: "Get in Touch",
+            data: ["+99 123 4567", "info@fresher.com"],
+          }}
+        />
       </div>
     </div>
   );
@@ -25,15 +41,15 @@ const Footer = () => {
 
 export default Footer;
 
-// footer sections
-const FooterSecs = () => {
+const FooterSecs = ({ data }) => {
   return (
     <div className={styles.footerItems}>
-      <h4 className={styles.footerHeadings}>Company</h4>
-      <p className={styles.footerParas}>About</p>
-      <p className={styles.footerParas}>Overview</p>
-      <p className={styles.footerParas}>Categories</p>
-      <p className={styles.footerParas}>Special orders</p>
+      <h4 className={styles.footerHeadings}>{data?.heading}</h4>
+      {data?.data?.map((item, i) => (
+        <p key={i} className={styles.footerParas}>
+          {item}
+        </p>
+      ))}
     </div>
   );
 };
