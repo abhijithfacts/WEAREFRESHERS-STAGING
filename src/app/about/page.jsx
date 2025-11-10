@@ -3,6 +3,8 @@ import CommonHeroBanner from "../../components/CommonHeroBanner/CommonHeroBanner
 import CommonCTA from "../../components/CommonCTAsection/CommonCTA";
 import AboutDesc from "../../sections/about/DescSection/AboutDesc";
 import WhyChooseUs from "../../sections/about/whyChooseUs/WhyChooseUs";
+import OurStory from "../../sections/about/ourStorySection/OurStory";
+import SignUpToday from "../../sections/landing/SignUpToday/SignUpToday";
 
 const AboutPage = () => {
   return (
@@ -23,6 +25,15 @@ const AboutPage = () => {
         }
       />
       <WhyChooseUs />
+      <CommonCTA
+        heading={"Common CTA"}
+        image="/images/about-cta-2.png"
+        paragraph={
+          "Sub heading goes here Max two lines Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        }
+      />
+      <OurStory />
+      <SignUpToday image="/images/sign-up2.jpg" />
     </>
   );
 };

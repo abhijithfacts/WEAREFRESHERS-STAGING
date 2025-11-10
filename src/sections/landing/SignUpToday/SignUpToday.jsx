@@ -2,9 +2,12 @@ import React from "react";
 import styles from "./signuptoday.module.css";
 import Button from "../../../components/Buttons/Button";
 
-const SignUpToday = () => {
+const SignUpToday = ({ image = "/images/Fresher Assets-23.jpg" }) => {
   return (
-    <div className={styles.supTodayContainer}>
+    <div
+      className={styles.supTodayContainer}
+      style={{ backgroundImage: `url(${image})` }}
+    >
       <div className={styles.supTodayContenHolder}>
         <h3 className={styles.supTitle}>Sign up today!</h3>
         <input className={styles.supInput} placeholder="Email..." />
