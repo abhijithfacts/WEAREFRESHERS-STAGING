@@ -20,6 +20,14 @@ const Overview = () => {
         image="/images/overview-cta.png"
       />
       <FindFarms />
+      <CommonCTA
+        image="/images/find-farms-cta.png"
+        imageDir="left"
+        heading={"Need Help?"}
+        paragraph={
+          "Sub heading goes here Max two linesLorem ipsum dolor sit amet, consectetur adipiscing elit, "
+        }
+      />
     </div>
   );
 };
