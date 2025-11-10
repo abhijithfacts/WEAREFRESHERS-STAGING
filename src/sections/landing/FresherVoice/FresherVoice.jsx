@@ -11,6 +11,9 @@ const FresherVoice = () => {
           <h5 className={styles.fvTitleTop}>fresher</h5>
           <h5 className={styles.fvTitleBottom}>voice</h5>
         </div>
+        <div className={styles.titleContainerMobile}>
+          <h5 className={styles.fvTitleTop}>Getting fresher</h5>
+        </div>
         <div className={styles.fvGreenLineContainer}>
           <h6 className={styles.greenLineText}>Latest News</h6>
           <div className={styles.fvGreenLine}></div>

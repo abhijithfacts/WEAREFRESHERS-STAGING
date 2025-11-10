@@ -1,58 +1,108 @@
-.headerContainer {
-  position: sticky;
-  top: 0;
-  right: 0;
-  height: 120px;
-  min-width: 100%;
-  background: #fff;
-  opacity: 0.9;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px 40px;
-  padding-right: 50px;
-  z-index: 1000;
+@media (max-width: 768px) {
+  .headerContainer {
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 100px;
+    min-width: 100%;
+    background: #fff;
+    z-index: 1000;
+  }
+
+  .burgerMenu {
+  }
+  .mobileAvatar {
+  }
+  .userIcon {
+    width: 26px;
+    height: 25px;
+  }
+
+  .headerLogo {
+    width: 150px;
+    height: auto;
+  }
+
+  .userGreet {
+    display: none;
+  }
+
+  .headerTopSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .headerNavSection {
+    display: none;
+  }
 }
 
-.headerLogo {
-  width: 150px;
-  height: auto;
-}
+@media (min-width: 1024px) {
+  .burgerMenu {
+    display: none;
+  }
+  .mobileAvatar {
+    display: none;
+  }
+  .headerContainer {
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 120px;
+    min-width: 100%;
+    background: #fff;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 40px;
+    padding-right: 50px;
+    z-index: 1000;
+  }
 
-.userGreet {
-  margin: 0px;
-  font-size: 15px;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
+  .headerLogo {
+    width: 150px;
+    height: auto;
+  }
 
-.headerTopSection {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .userGreet {
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
 
-.headerNavSection {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
+  .headerTopSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.headerNavItems {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
+  .headerNavSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
-.navItem {
-  margin: 0px;
-  letter-spacing: 1px;
-  font-size: 18px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: color 0.5s ease;
-}
-.navItem:hover {
-  color: #c9deb1;
+  .headerNavItems {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .navItem {
+    margin: 0px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.5s ease;
+  }
+  .navItem:hover {
+    color: #c9deb1;
+  }
 }

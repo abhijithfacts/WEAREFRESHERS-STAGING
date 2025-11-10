@@ -10,6 +10,9 @@ const About = () => {
           <h5 className={styles.aboutTitleTop}>Getting</h5>
           <h5 className={styles.aboutTitleBottom}>fresher</h5>
         </div>
+        <div className={styles.titleContainerMobile}>
+          <h5 className={styles.aboutTitleTop}>Getting fresher</h5>
+        </div>
         <div className={styles.aboutGreenLineContainer}>
           <h6 className={styles.greenLineText}>About Us</h6>
           <div className={styles.aboutGreenLine}></div>

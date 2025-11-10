@@ -1,100 +1,206 @@
-.sectionContainer {
-  display: flex;
-  width: 100%;
-  padding: 0px 40px;
-  justify-content: space-between;
-  /* justify-content: space-evenly; */
+@media (max-width: 768px) {
+  .sectionContainer {
+    width: 100%;
+    padding: 40px;
+    background: #fff;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.73),
+        rgba(255, 255, 255, 0.74)
+      ),
+      url("/images/plant-image.png");
+    object-fit: contain;
+    background-position: center;
+    height: fit-content;
+    background-repeat: no-repeat;
+  }
+
+  .mobileHeading {
+    display: flex;
+    justify-content: center;
+  }
+  .firstSection {
+    display: none;
+  }
+
+  .sectionTitle {
+    margin: 0px;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #000;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+
+  .plantImage {
+    display: none;
+  }
+
+  .secondSection {
+    display: none;
+  }
+
+  .thirdSection {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+  }
+
+  .rowWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .greenLineHorizontal {
+    display: none;
+  }
+
+  .numberWrap {
+    margin: 0;
+    font-weight: 300;
+    font-size: 50px;
+  }
+
+  .rowTop {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .textHolder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .rowHeading {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .rowParagraph {
+    margin: 0;
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+  }
 }
 
-.firstSection {
-  padding: 40px 0px;
-}
+@media (min-width: 1024px) {
+  .mobileHeading {
+    display: none;
+  }
+  .sectionContainer {
+    display: flex;
+    width: 100%;
+    padding: 0px 40px;
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
+  }
 
-.sectionTitle {
-  margin: 0px;
-  font-size: 50px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  color: #000;
-}
+  .firstSection {
+    padding: 40px 0px;
+  }
 
-.verticalLine {
-  width: 2px;
-  height: auto;
-  background: #c9deb1;
-  margin-right: 80px;
-}
+  .sectionTitle {
+    margin: 0px;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #000;
+  }
 
-.sectionTitleSL {
-  margin: 0px;
-  font-size: 50px;
-  font-weight: 300;
-  display: flex;
+  .verticalLine {
+    width: 2px;
+    height: auto;
+    background: #c9deb1;
+    margin-right: 80px;
+  }
 
-  letter-spacing: 1px;
-  color: #000;
-}
+  .sectionTitleSL {
+    margin: 0px;
+    font-size: 50px;
+    font-weight: 300;
+    display: flex;
 
-.plantImage {
-  width: 300px;
-  height: auto;
-}
+    letter-spacing: 1px;
+    color: #000;
+  }
 
-.secondSection {
-}
+  .plantImage {
+    width: 300px;
+    height: auto;
+  }
 
-.thirdSection {
-  /* padding: 40px 0px; */
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  .secondSection {
+  }
 
-.rowWrap {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: flex-end;
-  margin-left: auto;
-}
+  .thirdSection {
+    /* padding: 40px 0px; */
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.greenLineHorizontal {
-  height: 2px;
-  min-width: 100%;
-  background: #c9deb1;
-}
+  .rowWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+    margin-left: auto;
+  }
 
-.numberWrap {
-  margin: 0;
-  font-weight: 300;
-  font-size: 60px;
-}
+  .greenLineHorizontal {
+    height: 2px;
+    min-width: 100%;
+    background: #c9deb1;
+  }
 
-.rowTop {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
+  .numberWrap {
+    margin: 0;
+    font-weight: 300;
+    font-size: 60px;
+  }
 
-.textHolder {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+  .rowTop {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 
-.rowHeading {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 500;
-  text-align: end;
-  letter-spacing: 1px;
-}
+  .textHolder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-.rowParagraph {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-align: end;
+  .rowHeading {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: end;
+    letter-spacing: 1px;
+  }
+
+  .rowParagraph {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: end;
+  }
 }

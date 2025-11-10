@@ -1,43 +1,89 @@
-.ctaContainer {
-  width: 100%;
-  padding: 40px;
-  background: #c9deb1;
-  min-height: 330px;
-  max-height: 600px;
-  display: flex;
-  position: relative;
-  justify-content: space-between;
+@media (max-width: 768px) {
+  .ctaContainer {
+    width: 100%;
+    padding: 40px;
+    background: #c9deb1;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ctaRightSection {
+    display: none;
+  }
+  .ctaLeftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .ctaHeading {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .ctaPara {
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 23px;
+  }
+
+  .ctaButtonHolder {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.ctaLeftSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+@media (min-width: 1024px) {
+  .ctaContainer {
+    width: 100%;
+    padding: 40px;
+    background: #c9deb1;
+    min-height: 330px;
+    max-height: 600px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
 
-.ctaHeading {
-  margin: 0;
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
+  .ctaLeftSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.ctaPara {
-  font-size: 18px;
-  letter-spacing: 1px;
-}
+  .ctaHeading {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
 
-.ctaButtonHolder {
-  width: 300px;
-}
+  .ctaPara {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
 
-.ctaRightSection {
-}
+  .ctaButtonHolder {
+    width: 300px;
+  }
 
-.ctaImage {
-  width: 540px;
-  height: auto;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  .ctaRightSection {
+  }
+
+  .ctaImage {
+    width: 540px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }

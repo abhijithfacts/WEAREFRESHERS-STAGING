@@ -6,6 +6,10 @@ import Button from "../../../components/Buttons/Button";
 const LookingFresher = () => {
   return (
     <div className={styles.sectionContainer}>
+      <div className={styles.mobileHeading}>
+        <h4 className={styles.sectionTitle}>Looking fresher</h4>
+
+      </div>
       <div className={styles.firstSection}>
         <h4 className={styles.sectionTitle}>Looking</h4>
         <div className={styles.sectionTitleSL}>
