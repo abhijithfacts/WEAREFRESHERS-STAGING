@@ -1,0 +1,43 @@
+.cardWrapper {
+  max-width: 450px;
+  background: #fff;
+}
+
+.cardDetailsHolder {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardImage {
+  width: 450px;
+  height: auto;
+}
+
+.cardTitle {
+  margin: 0px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.cardSubTitle {
+  margin: 0px;
+  font-size: 28px;
+  color: #c9deb1;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.cardPara {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.cardButton {
+}

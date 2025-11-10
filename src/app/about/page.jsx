@@ -9,7 +9,11 @@ import SignUpToday from "../../sections/landing/SignUpToday/SignUpToday";
 const AboutPage = () => {
   return (
     <>
-      <CommonHeroBanner />
+      <CommonHeroBanner
+        image="/images/1.jpg"
+        text="Bringing Farm-Fresh Flowers to Your Business
+"
+      />
       <AboutDesc
         sectionName="About us"
         TitleTop="Our Mission"
@@ -26,6 +30,7 @@ const AboutPage = () => {
       />
       <WhyChooseUs />
       <CommonCTA
+        imageDir="left"
         heading={"Common CTA"}
         image="/images/about-cta-2.png"
         paragraph={

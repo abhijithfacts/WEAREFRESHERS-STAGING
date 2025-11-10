@@ -44,7 +44,10 @@ const Header = () => {
           <Link href={"/about"} className={styles.linkUnstyled}>
             <h5 className={styles.navItem}>About</h5>
           </Link>
-          <h5 className={styles.navItem}>Overview</h5>
+          <Link href={"/overview"} className={styles.linkUnstyled}>
+            <h5 className={styles.navItem}>Overview</h5>
+          </Link>
+
           <h5 className={styles.navItem}>Categories</h5>
           <h5 className={styles.navItem}>Special Orders</h5>
           <h5 className={styles.navItem}>Contact Us</h5>

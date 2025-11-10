@@ -3,12 +3,12 @@ import styles from "./commonHero.module.css";
 import Image from "next/image";
 import Button from "../Buttons/Button";
 
-const CommonHeroBanner = () => {
+const CommonHeroBanner = ({ image = "/images/1.jpg", text = "" }) => {
   return (
     <div className={styles.commonHeroContainer}>
       <Image
         className={styles.heroImage}
-        src={"/images/1.jpg"}
+        src={image}
         alt="hero-image"
         fill
         style={{ objectFit: "cover" }}
@@ -16,9 +16,7 @@ const CommonHeroBanner = () => {
       />
       <div className={styles.heroContent}>
         <div className={styles.heroTextContainer}>
-          <h5 className={styles.heroText}>
-            Bringing Farm-Fresh Flowers to Your Business
-          </h5>
+          <h5 className={styles.heroText}>{text}</h5>
         </div>
         <div className={styles.heroButtons}>
           <Button text={"Explore farms"} />
