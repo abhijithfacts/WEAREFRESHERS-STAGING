@@ -19,8 +19,8 @@ export function LoginForm({ className, ...props }) {
         <Image
           src="/images/desktop_login_logo.png"
           alt="logo"
-          width={300}
-          height={150}
+          width={500}
+          height={500}
           className={styles.logo}
         />
         {/* Card */}

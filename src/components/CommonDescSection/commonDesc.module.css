@@ -1,0 +1,225 @@
+@media (max-width: 768px) {
+  .CDSContainer {
+    background: #fff;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .CDStitleWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+    position: relative;
+  }
+  .titleContainer {
+    display: none;
+  }
+
+  .titleContainerMobile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .CDSTitleTop {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #000;
+  }
+
+  .CDSTitleBottom {
+    display: none;
+  }
+
+  .CDSGreenLineContainer {
+    display: none;
+  }
+
+  .CDSGreenLine {
+    display: none;
+  }
+
+  .greenLineText {
+    display: none;
+  }
+
+  .CDSParagraph {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 2px;
+    color: #000;
+  }
+
+  .cardsSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .cardSeparator {
+    display: none;
+  }
+
+  .cardHeading {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .cardImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardParagraph {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 2px;
+    color: #000;
+  }
+}
+
+@media (min-width: 1024px) {
+  .titleContainerMobile {
+    display: none;
+  }
+  .CDSContainer {
+    background: #fff;
+    width: 100%;
+    min-height: 500px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .flexContainer {
+    display: flex;
+  }
+  .columnSec {
+  }
+  .CDStitleWrap {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: start;
+    position: relative;
+    margin-bottom: 90px;
+  }
+
+  .CDSTitleTop {
+    margin: 0px;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #000;
+  }
+
+  .CDSTitleBottom {
+    margin: 0px;
+    margin-left: 100px;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #000;
+    position: absolute;
+  }
+
+  .CDSGreenLineContainer {
+    min-height: 3px;
+    max-height: 3px;
+    min-width: 300px;
+    position: relative;
+  }
+
+  .CDSGreenLine {
+    min-height: 3px;
+    max-height: 3px;
+    min-width: 300px;
+    background: #c9deb1;
+  }
+
+  .greenLineText {
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #c9deb1;
+  }
+
+  .CDSParagraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #000;
+  }
+
+  .cardsSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .card {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .cardSeparator {
+    min-width: 2px;
+    background: #c9deb1;
+    min-height: 450px;
+  }
+
+  .cardHeading {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .cardImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardParagraph {
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+
+  .CDSimage {
+    min-width: 600px;
+    height: 300px;
+  }
+
+  .buttonHolder {
+    display: flex;
+    gap: 20px;
+  }
+}

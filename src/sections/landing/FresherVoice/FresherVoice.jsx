@@ -49,8 +49,8 @@ const Cards = () => {
         className={styles.cardImage}
         src="/images/card.jpg"
         alt="card-image"
-        width={200}
-        height={100}
+        width={600}
+        height={600}
       />
       <h4 className={styles.cardHeading}>Countries</h4>
       <p className={styles.cardParagraph}>

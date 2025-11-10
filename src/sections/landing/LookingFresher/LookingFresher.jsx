@@ -8,7 +8,6 @@ const LookingFresher = () => {
     <div className={styles.sectionContainer}>
       <div className={styles.mobileHeading}>
         <h4 className={styles.sectionTitle}>Looking fresher</h4>
-
       </div>
       <div className={styles.firstSection}>
         <h4 className={styles.sectionTitle}>Looking</h4>
@@ -22,8 +21,8 @@ const LookingFresher = () => {
           className={styles.plantImage}
           src="/images/plant-image.png"
           alt="plant-image"
-          width={100}
-          height={100}
+          width={600}
+          height={600}
         />
       </div>
       <div className={styles.thirdSection}>

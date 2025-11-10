@@ -1,0 +1,89 @@
+@media (max-width: 768px) {
+  .commonCTAcontainer {
+    width: 100%;
+    padding: 40px;
+    background: #c9deb1;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .commonCtaRightSection {
+    display: none;
+  }
+  .commonCtaLeftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .commonCtaHeading {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .commonCtaPara {
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 23px;
+  }
+
+  .commonCtaButtonHolder {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .commonCTAcontainer {
+    width: 100%;
+    padding: 40px;
+    background: #c9deb1;
+    min-height: 330px;
+    max-height: 600px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .commonCtaLeftSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .commonCtaHeading {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .commonCtaPara {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+
+  .commonCtaButtonHolder {
+    width: 300px;
+  }
+
+  .commonCtaRightSection {
+  }
+
+  .commonCtaImage {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+  }
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/Header/Header";
 import StickyMenu from "../components/StickyMenu/StickyMenu";
 import HeroBanner from "../sections/landing/HeroBanner/HeroBanner";
 import About from "../sections/landing/AboutSection/About";
@@ -12,7 +11,6 @@ import NeedHelp from "../sections/landing/NeedHelp/NeedHelp";
 const page = () => {
   return (
     <div className="page-wrap">
-      <Header />
       <StickyMenu />
       <HeroBanner />
       <About />

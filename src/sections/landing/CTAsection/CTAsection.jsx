@@ -21,8 +21,8 @@ const CTAsection = () => {
           src="/images/cta-image.png"
           alt="CTA-image"
           className={styles.ctaImage}
-          width={100}
-          height={200}
+          width={500}
+          height={500}
         />
       </div>
     </div>

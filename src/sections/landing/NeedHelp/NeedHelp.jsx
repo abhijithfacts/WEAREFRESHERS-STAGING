@@ -11,8 +11,8 @@ const NeedHelp = () => {
           src="/images/need-help.png"
           alt="CTA-image"
           className={styles.ctaImage}
-          width={100}
-          height={200}
+          width={600}
+          height={600}
         />
       </div>
       <div className={styles.ctaRightSection}>

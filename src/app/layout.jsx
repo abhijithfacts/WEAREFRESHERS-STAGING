@@ -4,6 +4,7 @@ import "../app/globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "../components/Footer/Footer";
 import Copyright from "../components/Copyright/Copyright";
+import Header from "../components/Header/Header";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -22,6 +23,8 @@ export default function RootLayout({ children }) {
         {/* Main content */}
         <SpeedInsights />
         <ProgressBar />
+        <Header />
+
         <main>{children}</main>
         <Footer />
         <Copyright />

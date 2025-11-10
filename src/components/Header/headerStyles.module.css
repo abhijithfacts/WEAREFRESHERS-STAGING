@@ -11,16 +11,22 @@
 
   .burgerMenu {
   }
+
+  .burgerImage {
+    width: 26px;
+    height: 26px;
+  }
   .mobileAvatar {
   }
   .userIcon {
     width: 26px;
-    height: 25px;
+    height: 26px;
   }
 
   .headerLogo {
-    width: 150px;
+    width: 180px;
     height: auto;
+    cursor: pointer;
   }
 
   .userGreet {
@@ -58,14 +64,15 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 40px;
+    padding: 10px 40px;
     padding-right: 50px;
     z-index: 1000;
   }
 
   .headerLogo {
-    width: 150px;
+    max-width: 180px;
     height: auto;
+    cursor: pointer;
   }
 
   .userGreet {
@@ -104,5 +111,10 @@
   }
   .navItem:hover {
     color: #c9deb1;
+  }
+
+  .linkUnstyled {
+    text-decoration: none;
+    color: #000;
   }
 }

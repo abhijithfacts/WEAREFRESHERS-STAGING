@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./headerStyles.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -11,26 +12,28 @@ const Header = () => {
             className={styles.burgerImage}
             alt="nav-burger"
             src="/icons/burger.png"
-            width={25}
-            height={20}
+            width={40}
+            height={40}
             quality={100}
           />
         </div>
-        <Image
-          className={styles.headerLogo}
-          alt="header-logo"
-          width={80}
-          height={40}
-          src="/images/desktop_nav_logo.png"
-          quality={100}
-        />
+        <Link href={"/"} className={styles.linkUnstyled}>
+          <Image
+            className={styles.headerLogo}
+            alt="header-logo"
+            width={200}
+            height={100}
+            src="/images/desktop_nav_logo.png"
+            quality={100}
+          />
+        </Link>
         <h5 className={styles.userGreet}>Welcome FRESHER USER 123</h5>
         <div className={styles.mobileAvatar}>
           <Image
             className={styles.userIcon}
             alt="user-icon"
-            width={34}
-            height={25}
+            width={40}
+            height={40}
             src="/icons/user.png"
             quality={100}
           />
@@ -38,7 +41,9 @@ const Header = () => {
       </div>
       <div className={styles.headerNavSection}>
         <div className={styles.headerNavItems}>
-          <h5 className={styles.navItem}>About</h5>
+          <Link href={"/about"} className={styles.linkUnstyled}>
+            <h5 className={styles.navItem}>About</h5>
+          </Link>
           <h5 className={styles.navItem}>Overview</h5>
           <h5 className={styles.navItem}>Categories</h5>
           <h5 className={styles.navItem}>Special Orders</h5>
