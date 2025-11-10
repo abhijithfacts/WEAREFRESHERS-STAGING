@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./commonDesc.module.css";
+import styles from "./AboutDesc.module.css";
 import Image from "next/image";
-import Button from "../Buttons/Button";
+import Button from "../../../components/Buttons/Button";
 
-const CommonDesc = ({
+const AboutDesc = ({
   TitleTop = "",
   TitleSL = "",
   pararaph = "",
@@ -11,24 +11,24 @@ const CommonDesc = ({
   image = "",
 }) => {
   return (
-    <div className={styles.CDSContainer}>
+    <div className={styles.ADSContainer}>
       <div>
         <div>
-          <div className={styles.CDStitleWrap}>
+          <div className={styles.ADStitleWrap}>
             <div className={styles.titleContainer}>
-              <h5 className={styles.CDSTitleTop}>{TitleTop}</h5>
-              <h5 className={styles.CDSTitleBottom}>{TitleSL}</h5>
+              <h5 className={styles.ADSTitleTop}>{TitleTop}</h5>
+              <h5 className={styles.ADSTitleBottom}>{TitleSL}</h5>
             </div>
             <div className={styles.titleContainerMobile}>
-              <h5 className={styles.CDSTitleTop}>{TitleTop + " " + TitleSL}</h5>
+              <h5 className={styles.ADSTitleTop}>{TitleTop + " " + TitleSL}</h5>
             </div>
-            <div className={styles.CDSGreenLineContainer}>
+            <div className={styles.ADSGreenLineContainer}>
               <h6 className={styles.greenLineText}>{sectionName}</h6>
-              <div className={styles.CDSGreenLine}></div>
+              <div className={styles.ADSGreenLine}></div>
             </div>
           </div>
           <div>
-            <p className={styles.CDSParagraph}>{pararaph} </p>
+            <p className={styles.ADSParagraph}>{pararaph} </p>
             <div className={styles.buttonHolder}>
               <Button text={"Learn more"} bg={"#c9deb1"} />
               <Button text={"Learn more"} bg={"#c9deb1"} />
@@ -37,7 +37,7 @@ const CommonDesc = ({
         </div>
       </div>
       <Image
-        className={styles.CDSimage}
+        className={styles.ADSimage}
         src={image}
         alt="common-sec-image"
         width={600}
@@ -47,4 +47,4 @@ const CommonDesc = ({
   );
 };
 
-export default CommonDesc;
+export default AboutDesc;

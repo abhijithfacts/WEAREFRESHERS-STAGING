@@ -20,11 +20,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={rubik.className}>
-        {/* Main content */}
         <SpeedInsights />
         <ProgressBar />
         <Header />
-
         <main>{children}</main>
         <Footer />
         <Copyright />

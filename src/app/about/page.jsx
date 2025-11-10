@@ -1,13 +1,14 @@
 import React from "react";
 import CommonHeroBanner from "../../components/CommonHeroBanner/CommonHeroBanner";
 import CommonCTA from "../../components/CommonCTAsection/CommonCTA";
-import CommonDesc from "../../components/CommonDescSection/CommonDesc";
+import AboutDesc from "../../sections/about/DescSection/AboutDesc";
+import WhyChooseUs from "../../sections/about/whyChooseUs/WhyChooseUs";
 
 const AboutPage = () => {
   return (
     <>
       <CommonHeroBanner />
-      <CommonDesc
+      <AboutDesc
         sectionName="About us"
         TitleTop="Our Mission"
         image="/images/about-det.png"
@@ -21,6 +22,7 @@ const AboutPage = () => {
           "Sub heading goes here Max two lines Lorem ipsum dolor sit amet, consectetur adipiscing elit"
         }
       />
+      <WhyChooseUs />
     </>
   );
 };
