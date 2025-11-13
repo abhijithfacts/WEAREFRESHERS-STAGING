@@ -2,6 +2,7 @@ import { Rubik } from "next/font/google";
 import ProgressBar from "../components/ProgressBar";
 import "../app/globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import Footer from "../components/Footer/Footer";
 import Copyright from "../components/Copyright/Copyright";
 import Header from "../components/Header/Header";
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={rubik.className}>
         <SpeedInsights />
+        <Analytics />
         <ProgressBar />
         <Header />
         <main>{children}</main>
