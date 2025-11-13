@@ -64,13 +64,13 @@ const Header = () => {
             <Link href={"/overview"} className={styles.linkUnstyled}>
               <h5 className={styles.navItem}>Overview</h5>
             </Link>
-            <Link href={"/overview"} className={styles.linkUnstyled}>
+            <Link href={"/categories"} className={styles.linkUnstyled}>
               <h5 className={styles.navItem}>Categories</h5>
             </Link>
-            <Link href={"/overview"} className={styles.linkUnstyled}>
+            <Link href={"/special-offer"} className={styles.linkUnstyled}>
               <h5 className={styles.navItem}>Special Offer</h5>
             </Link>
-            <Link href={"/overview"} className={styles.linkUnstyled}>
+            <Link href={"/contact-us"} className={styles.linkUnstyled}>
               <h5 className={styles.navItem}>Contact Us</h5>
             </Link>
           </div>

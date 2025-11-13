@@ -1,0 +1,34 @@
+.datePickerWrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dateInput {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #c9deb1;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+}
+
+.dateInput:focus {
+  outline: none;
+  border-color: #c9deb1;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.dateInput::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 10px;
+  color: #c9deb1;
+}

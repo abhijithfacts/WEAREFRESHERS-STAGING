@@ -3,7 +3,11 @@ import styles from "./commonHero.module.css";
 import Image from "next/image";
 import Button from "../Buttons/Button";
 
-const CommonHeroBanner = ({ image = "/images/1.jpg", text = "" }) => {
+const CommonHeroBanner = ({
+  image = "/images/1.jpg",
+  text = "",
+  showButtons = true,
+}) => {
   return (
     <div className={styles.commonHeroContainer}>
       <Image
@@ -18,10 +22,12 @@ const CommonHeroBanner = ({ image = "/images/1.jpg", text = "" }) => {
         <div className={styles.heroTextContainer}>
           <h5 className={styles.heroText}>{text}</h5>
         </div>
-        <div className={styles.heroButtons}>
-          <Button text={"Explore farms"} />
-          <Button text={"Order"} />
-        </div>
+        {showButtons && (
+          <div className={styles.heroButtons}>
+            <Button text={"Explore farms"} />
+            <Button text={"Order"} />
+          </div>
+        )}
       </div>
     </div>
   );

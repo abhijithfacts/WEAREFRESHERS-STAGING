@@ -1,0 +1,118 @@
+@media (min-width: 1024px) {
+  .CardWrapper {
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .CardTopSection {
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+  }
+  .ProductName {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    /* white-space: nowrap; */
+    color: #000;
+  }
+  .FarmName {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    /* white-space: nowrap; */
+    color: #bfbfbf;
+  }
+  .ImageSection {
+  }
+  .ProductImage {
+    width: 100%;
+    height: auto;
+  }
+  .AttributesSection {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .AttributeItem {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .AttributeIcon {
+    width: 20px;
+    height: 20px;
+  }
+  .AttributeText {
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #000;
+  }
+  .FarmDetailsSection {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .FarmDetails {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .FarmCountryFlag {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  .GrowerName {
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+  }
+  .PriceQtySection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .PQvalues {
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+  }
+  .BoldValues {
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  .AddRemoveButtonsSection {
+    display: flex;
+    gap: 5px;
+  }
+  .CartButtonSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .ProductCardDetailsLink {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #bfbfbf;
+  }
+
+  .SaveProductIcon {
+    cursor: pointer;
+  }
+  
+}
