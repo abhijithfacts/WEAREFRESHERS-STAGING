@@ -1,0 +1,26 @@
+@media (min-width: 1024px) {
+  .ItemNumberHeading {
+    margin: 0px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  .GridItems {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .FieldLabel {
+    font-size: 18px;
+    margin: 0px;
+    letter-spacing: 1px;
+  }
+  .SelectContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+  }
+}

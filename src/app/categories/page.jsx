@@ -1,11 +1,10 @@
 import React from "react";
 import CommonHeroBanner from "../../components/CommonHeroBanner/CommonHeroBanner";
 import HorizontalScrollables from "../../sections/categories/HorizontalScrollables/HorizontalScrollables";
-import FilterBar from "../../components/FilterBar/FilterBar";
 import styles from "./categoriespage.module.css";
 import ProductsList from "../../components/ProductsList/ProductsList";
 import FilterComponent from "../../components/FilterComponent/FilterComponent";
-
+import SignUpToday from "../../sections/landing/SignUpToday/SignUpToday";
 
 const Categories = () => {
   return (
@@ -16,11 +15,11 @@ const Categories = () => {
         showButtons={false}
       />
       <HorizontalScrollables />
-      <FilterBar />
       <div className={styles.ProductsList}>
-      <FilterComponent/>
-      <ProductsList />
+        <FilterComponent />
+        <ProductsList />
       </div>
+      <SignUpToday image="/images/category-signup.jpg" />
     </div>
   );
 };
