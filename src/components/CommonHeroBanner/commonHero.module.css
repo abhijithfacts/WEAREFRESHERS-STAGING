@@ -2,7 +2,9 @@
   .commonHeroContainer {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 350px;
+    display: flex;
+    justify-content: start;
     overflow: hidden;
   }
 
@@ -22,10 +24,27 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    text-align: center;
+    width: 100%;
+    height: 100%;
+    /* padding: 30px 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
+  .heroText {
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+  }
   .heroButtons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 }
 

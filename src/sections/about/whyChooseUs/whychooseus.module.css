@@ -1,17 +1,8 @@
 @media (max-width: 768px) {
   .sectionContainer {
     width: 100%;
-    padding: 40px;
+    padding: 20px;
     background: #fff;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.73),
-        rgba(255, 255, 255, 0.74)
-      ),
-      url("/images/plant-image.png");
-    object-fit: contain;
-    background-position: center;
-    height: fit-content;
-    background-repeat: no-repeat;
   }
 
   .mobileHeading {
@@ -43,17 +34,17 @@
   }
 
   .thirdSection {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     justify-content: space-between;
   }
 
   .rowWrap {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
   }
 

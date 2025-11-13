@@ -9,14 +9,9 @@
   }
 
   .ADStitleWrap {
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    text-align: start;
-    justify-content: space-between;
-    position: relative;
+    width: 100%;
+    justify-content: center;
   }
   .titleContainer {
     display: none;
@@ -35,6 +30,7 @@
     font-weight: 400;
     letter-spacing: 2px;
     color: #000;
+    text-align: center;
   }
 
   .ADSTitleBottom {
@@ -99,6 +95,16 @@
     line-height: 23px;
     letter-spacing: 2px;
     color: #000;
+  }
+
+  .buttonHolder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .ADSimage {
+    display: none;
   }
 }
 

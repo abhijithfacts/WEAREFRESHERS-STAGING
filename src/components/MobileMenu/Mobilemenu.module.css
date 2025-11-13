@@ -1,0 +1,101 @@
+@media (max-width: 768px) {
+  .MenuWrap {
+    background: #eceeef;
+    padding: 30px 20px;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 10000;
+  }
+
+  .MenuClose {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 10001;
+  }
+
+  .CloseIcon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .GreetSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .WelcomeText {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+
+  .Icons {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .CartSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .NavSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .NavItems {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+
+  .SearchSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background: #fff;
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .NavSearch {
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .MenuWrap {
+    display: none;
+  }
+}

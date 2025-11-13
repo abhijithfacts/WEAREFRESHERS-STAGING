@@ -1,4 +1,44 @@
 @media (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .textSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .heading {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #000;
+  }
+
+  .paragraphSection {
+    display: flex;
+    text-align: center;
+  }
+
+  .image {
+    display: none;
+  }
+  .paragraph {
+    margin: 0;
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1024px) {
