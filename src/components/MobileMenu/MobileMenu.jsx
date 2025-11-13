@@ -41,7 +41,7 @@ const MobileMenu = ({ showMobileMenu,closeMenu }) => {
         <Link className={styles.NavItems} href="/about">
           About
         </Link>
-        <Link className={styles.NavItems} href="/about">
+        <Link className={styles.NavItems} href="/overview">
           Overview
         </Link>
         <Link className={styles.NavItems} href="/about">
