@@ -3,10 +3,12 @@ import CommonHeroBanner from "../../components/CommonHeroBanner/CommonHeroBanner
 import StyledHeading from "../../components/StyledSectionHeading/StyledHeading";
 import styles from "./specialofferpage.module.css";
 import OrderForm from "../../components/OrderForm/OrderForm";
+import StickyMenu from "../../components/StickyMenu/StickyMenu";
 
 const page = () => {
   return (
     <div>
+      <StickyMenu />
       <CommonHeroBanner
         image="/images/special-offer-hero.jpg"
         text="Special Orders"

@@ -3,10 +3,12 @@ import CommonHeroBanner from "../../components/CommonHeroBanner/CommonHeroBanner
 import WorldMap from "../../components/WorldMap/WorldMap";
 import CommonCTA from "../../components/CommonCTAsection/CommonCTA";
 import FindFarms from "../../sections/overview/findFarms/FindFarms";
+import StickyMenu from "../../components/StickyMenu/StickyMenu";
 
 const Overview = () => {
   return (
     <div>
+      <StickyMenu />
       <CommonHeroBanner
         image="/images/overview-hero.jpg"
         text="Bringing Farm-Fresh Flowers to Your Business"

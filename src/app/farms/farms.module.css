@@ -1,0 +1,12 @@
+@media (min-width: 1024px) {
+  .Wrapper {
+    background: #f5f6f8;
+  }
+  .CardsContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+  }
+}

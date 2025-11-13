@@ -4,11 +4,13 @@ import CommonCTA from "../../components/CommonCTAsection/CommonCTA";
 import AboutDesc from "../../sections/about/DescSection/AboutDesc";
 import WhyChooseUs from "../../sections/about/whyChooseUs/WhyChooseUs";
 import OurStory from "../../sections/about/ourStorySection/OurStory";
+import StickyMenu from "../../components/StickyMenu/StickyMenu";
 import SignUpToday from "../../sections/landing/SignUpToday/SignUpToday";
 
 const AboutPage = () => {
   return (
     <>
+      <StickyMenu />
       <CommonHeroBanner
         image="/images/1.jpg"
         text="Bringing Farm-Fresh Flowers to Your Business

@@ -6,7 +6,7 @@
 @media (min-width: 1024px) {
   .menuWrapper {
     position: fixed;
-    width: 60px;
+    width: 70px;
     top: 120px;
     right: 0px;
     display: flex;

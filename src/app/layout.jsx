@@ -14,7 +14,8 @@ const rubik = Rubik({
 
 export const metadata = {
   title: "We are freshers",
-  description: "we are freshers",
+  description:
+    "At Fresher, we're passionate about bringing the beauty of fresh flowers directly from the farm to your doorstep. We bridge the gap between flower shops, online retailers, and the source, offering a seamless and reliable supply chain for the freshest blooms available.",
 };
 
 export default function RootLayout({ children }) {
