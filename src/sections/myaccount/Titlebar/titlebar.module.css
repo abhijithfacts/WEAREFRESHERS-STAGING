@@ -1,0 +1,21 @@
+@media (min-width: 1024px) {
+  .SectionWrap {
+    display: flex;
+    padding: 10px 40px;
+    gap: 10px;
+    background: #c9deb1;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .UserIcon {
+    width: 20px;
+    height: 25px;
+  }
+  .UserName {
+    margin: 0px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+}

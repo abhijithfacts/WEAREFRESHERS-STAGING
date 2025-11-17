@@ -1,0 +1,45 @@
+@media (min-width: 1024px) {
+  .MenuContainer {
+    background: #f0f0f0;
+    width: 350px;
+    border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 700px;
+  }
+
+  .MenuItems {
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 40px;
+    color: #6a6a6a;
+  }
+  .MenuItemActive {
+    background: #c9deb1;
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 40px;
+    color: #000;
+  }
+
+  .MenuItemIcon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .MenuItemText {
+    margin: 0px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,19 @@
+@media (min-width: 1024px) {
+  .ContactInfoCards {
+    display: flex;
+    gap: 10px;
+  }
+
+  .FormSection {
+    padding: 10px 40px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .GreenStrip {
+    background: #c9deb1;
+    height: 40px;
+    width: 100%;
+    margin-top: 100px;
+  }
+}
