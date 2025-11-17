@@ -5,12 +5,14 @@
     border-top-right-radius: 15px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     height: 700px;
+    position: sticky;
+    top: 140px;
   }
 
   .MenuItems {
-    padding: 10px;
+    padding: 15px 10px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     display: flex;
@@ -18,10 +20,17 @@
     align-items: center;
     padding-left: 40px;
     color: #6a6a6a;
+    cursor: pointer;
+    transition: background 0.2s ease;
   }
+
+  .MenuItems:hover {
+    background: #c9deb1;
+  }
+
   .MenuItemActive {
     background: #c9deb1;
-    padding: 10px;
+    padding: 15px 10px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     display: flex;
@@ -29,6 +38,7 @@
     align-items: center;
     padding-left: 40px;
     color: #000;
+    cursor: pointer;
   }
 
   .MenuItemIcon {
