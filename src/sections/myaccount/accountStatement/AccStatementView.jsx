@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./accstatement.module.css";
 import Button from "../../../components/Buttons/Button";
-import CustomerStatementTable from "./AccTable/AccTable";
+import StyledTable from "../../../components/StyledTable/StyledTable";
 
 const customerDetails = [
   { label: "Customer Name:", value: "FRESHER USER 123" },
@@ -15,43 +15,20 @@ const customerDetails = [
   { label: "Account:", value: "Verified" },
 ];
 
-const rows = [
+const columns = [
+  { key: "date", label: "Date" },
+  { key: "transaction", label: "Transaction" },
+  { key: "narration", label: "Narration" },
+  { key: "debit", label: "Debit" },
+  { key: "credit", label: "Credit" },
+  { key: "balance", label: "Balance" },
+];
+
+const data = [
   {
     date: "20-01-2025",
-    transaction: "Lorum Ipsum",
-    narration: "Opening Balance as on–Mar 19 2025 12:00am",
-    debit: "AED 300.00",
-    credit: "AED 300.00",
-    balance: "0.00CR",
-  },
-  {
-    date: "20-01-2025",
-    transaction: "Lorum Ipsum",
-    narration: "Opening Balance as on–Mar 19 2025 12:00am",
-    debit: "AED 300.00",
-    credit: "AED 300.00",
-    balance: "0.00CR",
-  },
-  {
-    date: "20-01-2025",
-    transaction: "Lorum Ipsum",
-    narration: "Opening Balance as on–Mar 19 2025 12:00am",
-    debit: "AED 300.00",
-    credit: "AED 300.00",
-    balance: "0.00CR",
-  },
-  {
-    date: "20-01-2025",
-    transaction: "Lorum Ipsum",
-    narration: "Opening Balance as on–Mar 19 2025 12:00am",
-    debit: "AED 300.00",
-    credit: "AED 300.00",
-    balance: "0.00CR",
-  },
-  {
-    date: "20-01-2025",
-    transaction: "Lorum Ipsum",
-    narration: "Opening Balance as on–Mar 19 2025 12:00am",
+    transaction: "Lorem Ipsum",
+    narration: "Opening balance…",
     debit: "AED 300.00",
     credit: "AED 300.00",
     balance: "0.00CR",
@@ -75,7 +52,7 @@ const AccStatementView = () => {
         );
       })}
 
-      <CustomerStatementTable data={rows} />
+      <StyledTable columns={columns} data={data} />
     </div>
   );
 };

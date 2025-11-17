@@ -9,6 +9,7 @@ import Minicards from "../../sections/myaccount/miniCards/Minicards";
 import PersonalDetails from "../../sections/myaccount/personalDetails/PersonalDetails";
 import PasswordManagement from "../../sections/myaccount/passwordManagement/PasswordManagement";
 import AccStatementView from "../../sections/myaccount/accountStatement/AccStatementView";
+import Orders from "../../sections/myaccount/orders/OrdersView";
 
 const MyAccount = () => {
   const [menuActive, setMenuActive] = useState("Overview");
@@ -73,6 +74,7 @@ const MyAccount = () => {
           {menuActive == "Orders" && (
             <>
               <h5 className={styles.WelcomeHeading}>Orders</h5>
+              <Orders />
             </>
           )}
         </div>
