@@ -1,0 +1,10 @@
+@media (min-width: 1024px) {
+  .FlexContainer {
+  }
+  .SectionHeading {
+    margin: 20px 40px;
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,16 @@
+@media (min-width: 1024px) {
+  .CountriesSectionWrap {
+    background: #f5f6f8;
+  }
+  .ParaWrap {
+    padding: 40px;
+  }
+
+  .Para {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #000;
+  }
+}

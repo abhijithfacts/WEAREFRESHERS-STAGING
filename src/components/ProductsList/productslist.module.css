@@ -5,6 +5,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
+    background: #f5f6f8;
   }
 
   .ItemsText {

@@ -2,13 +2,19 @@ import React from "react";
 import styles from "./horizontalscrollables.module.css";
 import Image from "next/image";
 
-const HorizontalScrollables = () => {
+const HorizontalScrollables = ({ removePadding = false, ShowTitle = true }) => {
   return (
-    <div className={styles.HSCcontainer}>
-      <div className={styles.HSCsecionTitleContainer}>
-        <h5 className={styles.HSCheading}>Browse by Variety</h5>
-        <div className={styles.GreenLine}></div>
-      </div>
+    <div
+      className={styles.HSCcontainer}
+      style={{ padding: removePadding && "0px" }}
+    >
+      {ShowTitle && (
+        <div className={styles.HSCsecionTitleContainer}>
+          <h5 className={styles.HSCheading}>Browse by Variety</h5>
+          <div className={styles.GreenLine}></div>
+        </div>
+      )}
+
       {/* <div className={styles.ScrollButton}>
         <Image
           src="/icons/Arrow-left.png"

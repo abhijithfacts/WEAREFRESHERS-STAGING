@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import styles from "./orders.module.css";
 import Button from "../../../components/Buttons/Button";
 import StyledTable from "../../../components/StyledTable/StyledTable";
+// import { useSession, signIn, signOut } from "next-auth/react";
 
 const customerDetails = [
   { label: "Customer Name:", value: "FRESHER USER 123" },

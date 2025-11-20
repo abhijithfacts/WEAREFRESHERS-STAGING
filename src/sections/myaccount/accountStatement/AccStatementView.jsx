@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./accstatement.module.css";
 import Button from "../../../components/Buttons/Button";
 import StyledTable from "../../../components/StyledTable/StyledTable";
+import CustomCalendar from "../../../components/CustomCalendar/CustomCalendar";
 
 const customerDetails = [
   { label: "Customer Name:", value: "FRESHER USER 123" },
@@ -39,6 +40,7 @@ const AccStatementView = () => {
   return (
     <div className={styles.DetailsSection}>
       <div className={styles.FilterSection}>
+        <CustomCalendar />
         <Button text={"Filter"} bg="#C9DEB1" />
         <Button text={"Download"} bg="#fff" />
       </div>

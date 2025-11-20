@@ -4,11 +4,14 @@ import ProductCard from "../ProductCard/ProductCard";
 import FilterBar from "../FilterBar/FilterBar";
 import Button from "../Buttons/Button";
 
-const ProductsList = () => {
+const ProductsList = ({ dtp = 3 }) => {
   return (
     <div>
       <FilterBar />
-      <div className={styles.ProductsContainer}>
+      <div
+        className={styles.ProductsContainer}
+        style={{ gridTemplateColumns: `repeat(${dtp},1fr)` }}
+      >
         <ProductCard />
         <ProductCard />
         <ProductCard />

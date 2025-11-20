@@ -8,6 +8,16 @@
     overflow: hidden;
   }
 
+  /* .heroImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  } */
+
   .heroImage {
     position: absolute;
     top: 0;
@@ -16,6 +26,17 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
+  }
+
+  .heroImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    pointer-events: none;
   }
 
   .heroContent {
@@ -56,6 +77,16 @@
     overflow: hidden;
   }
 
+  /* .heroImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  } */
+
   .heroImage {
     position: absolute;
     top: 0;
@@ -64,6 +95,17 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
+  }
+
+  .heroImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35); 
+    pointer-events: none;
   }
 
   .heroContent {

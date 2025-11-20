@@ -4,7 +4,7 @@ import { MapPin } from "lucide-react";
 import styles from "./WorldMap.module.css";
 import Button from "../Buttons/Button";
 
-export default function WorldMap() {
+export default function WorldMap({ mapOnly = false }) {
   const locations = [
     { country: "USA", top: "33%", left: "25%" },
     { country: "Mexico", top: "47%", left: "22%" },
@@ -28,14 +28,21 @@ export default function WorldMap() {
 
   return (
     <div className={styles.mapWrapper}>
-      <div className={styles.secionTitleContainer}>
-        <h5 className={styles.secionTitle}>Start Your Journey by Country</h5>
-        <div className={styles.greenLine}></div>
-      </div>
-      <p className={styles.paragraph}>
-        Choose a country to explore farms and flower varieties, or compare
-        prices and availability.
-      </p>
+      {!mapOnly && (
+        <>
+          <div className={styles.secionTitleContainer}>
+            <h5 className={styles.secionTitle}>
+              Start Your Journey by Country
+            </h5>
+            <div className={styles.greenLine}></div>
+          </div>
+          <p className={styles.paragraph}>
+            Choose a country to explore farms and flower varieties, or compare
+            prices and availability.
+          </p>
+        </>
+      )}
+
       <div className={styles.mapContainer}>
         <Image
           src="/images/worldmap.png"
@@ -57,10 +64,11 @@ export default function WorldMap() {
           </button>
         ))}
       </div>
-
-      <div className={styles.buttonHolder}>
-        <Button text={"View Countries"} bg={"#c9deb1"} />
-      </div>
+      {!mapOnly && (
+        <div className={styles.buttonHolder}>
+          <Button text={"View Countries"} bg={"#c9deb1"} />
+        </div>
+      )}
     </div>
   );
 }

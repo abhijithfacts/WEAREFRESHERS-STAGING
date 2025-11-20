@@ -1,0 +1,22 @@
+@media (min-width: 1024px) {
+  .FlexContainer {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+    align-items: flex-start;
+    padding: 40px;
+  }
+  .QNList {
+    width: 100%;
+  }
+  .TitleContainer {
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .SectionTitle {
+    margin: 0px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+}
