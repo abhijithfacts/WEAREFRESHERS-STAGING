@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./faq.module.css";
 import QAdrop from "../../sections/FAQ/QAdrop/QAdrop";
+import CommonCTA from "../../components/CommonCTAsection/CommonCTA";
 
 const page = () => {
   return (
@@ -61,6 +62,17 @@ const page = () => {
             );
           })}
         </div>
+      </div>
+
+      <div style={{ marginTop: "140px" }}>
+        <CommonCTA
+          heading={"Still Need Help?"}
+          paragraph={
+            "Sub heading goes here Max two lines Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          }
+          image="/images/need-help.png"
+          imageDir="left"
+        />
       </div>
     </div>
   );

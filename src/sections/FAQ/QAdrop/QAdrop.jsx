@@ -17,15 +17,19 @@ const QAdrop = ({ qn, an, borderBottom = false }) => {
         {expanded ? (
           <FaMinus
             className={styles.ToggleIcon}
+            style={{ color: expanded ? "#96A684" : "#000" }}
             onClick={() => setExpanded(false)}
           />
         ) : (
           <FaPlus
             className={styles.ToggleIcon}
+            style={{ color: expanded ? "#96A684" : "#000" }}
             onClick={() => setExpanded(true)}
           />
         )}
-        <h6 className={styles.Qn}>{qn}</h6>
+        <h6 className={styles.Qn} style={{ color: !expanded && "#000" }}>
+          {qn}
+        </h6>
       </div>
       {expanded && <p className={styles.An}>{an}</p>}
     </div>
