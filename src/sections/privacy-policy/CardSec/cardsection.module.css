@@ -1,0 +1,30 @@
+@media (min-width: 1024px) {
+  .Container {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #000;
+  }
+  .HeadingWrap {
+    background: #eceeef;
+    min-height: 100%;
+  }
+
+  .SecHeading {
+    margin: 0px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 20px;
+    font-size: 30px;
+    color: #96a684;
+    min-width: 350px;
+  }
+
+  .Para {
+    padding: 20px;
+    margin: 0px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+  }
+}

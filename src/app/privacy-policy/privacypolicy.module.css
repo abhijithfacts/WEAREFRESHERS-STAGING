@@ -1,0 +1,23 @@
+@media (min-width: 1024px) {
+  .Wrapper {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: #fff;
+  }
+  .MainHeading {
+    margin: 0px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 35px;
+    color: #000;
+  }
+  .Para {
+    margin: 0px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+  }
+}
