@@ -262,7 +262,7 @@ const cartDetails = [
 const Cart = () => {
   return (
     <div className={styles.SectionWrapper}>
-      <Titlebar title="John Doe" />
+      <Titlebar title="Nihad" />
       <div className={styles.DetailsSection}>
         <h5 className={styles.SectionHeading}>Your Cart</h5>
         <div className={styles.TableWrapper}>

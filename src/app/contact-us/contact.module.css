@@ -1,3 +1,29 @@
+@media (max-width: 768px) {
+  .ContactInfoCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .FormSection {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .GreenStrip {
+    background: #c9deb1;
+    height: 40px;
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+
 @media (min-width: 1024px) {
   .ContactInfoCards {
     display: flex;

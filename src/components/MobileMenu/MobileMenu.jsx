@@ -3,7 +3,7 @@ import styles from "./Mobilemenu.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-const MobileMenu = ({ showMobileMenu,closeMenu }) => {
+const MobileMenu = ({ showMobileMenu, closeMenu }) => {
   return (
     <div
       className={styles.MenuWrap}
@@ -44,13 +44,13 @@ const MobileMenu = ({ showMobileMenu,closeMenu }) => {
         <Link className={styles.NavItems} href="/overview">
           Overview
         </Link>
-        <Link className={styles.NavItems} href="/about">
+        <Link className={styles.NavItems} href="/categories">
           Categories
         </Link>
-        <Link className={styles.NavItems} href="/about">
+        <Link className={styles.NavItems} href="/special-offer">
           Special Orders
         </Link>
-        <Link className={styles.NavItems} href="/about">
+        <Link className={styles.NavItems} href="/contact-us">
           Contact Us
         </Link>
       </div>

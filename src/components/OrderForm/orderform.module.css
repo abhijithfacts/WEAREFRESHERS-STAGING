@@ -1,3 +1,35 @@
+@media (max-width: 768px) {
+  .ItemNumberHeading {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #000;
+  }
+  .GridItems {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0px;
+  }
+
+  .FieldLabel {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #000;
+  }
+  .SelectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
 @media (min-width: 1024px) {
   .ItemNumberHeading {
     margin: 0px;
@@ -21,6 +53,6 @@
   .SelectContainer {
     display: flex;
     flex-direction: column;
-    gap: 10px;  
+    gap: 10px;
   }
 }

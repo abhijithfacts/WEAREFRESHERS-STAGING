@@ -1,3 +1,51 @@
+@media (max-width: 768px) {
+  .MenuContainer {
+    display: none;
+  }
+
+  .MenuItems {
+    padding: 15px 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 40px;
+    color: #6a6a6a;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  .MenuItems:hover {
+    background: #c9deb1;
+  }
+
+  .MenuItemActive {
+    background: #c9deb1;
+    padding: 15px 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 40px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .MenuItemIcon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .MenuItemText {
+    margin: 0px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
 @media (min-width: 1024px) {
   .MenuContainer {
     background: #f0f0f0;

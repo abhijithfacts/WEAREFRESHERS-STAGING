@@ -1,3 +1,38 @@
+@media (max-width: 768px) {
+  .ProductsContainer {
+    max-width: 768px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px;
+    padding: 10px;
+    background: #f5f6f8;
+  }
+
+  .ItemsText {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000;
+  }
+
+  .ButtonContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+  }
+
+  .FlexCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 1024px) {
   .ProductsContainer {
     display: grid;

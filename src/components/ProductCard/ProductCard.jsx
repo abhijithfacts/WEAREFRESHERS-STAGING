@@ -69,7 +69,11 @@ const ProductCard = () => {
         <Link href="/details" className={styles.ProductCardDetailsLink}>
           Details
         </Link>
-        <FaRegBookmark size={22} color="#bfbfbf" className={styles.SaveProductIcon}/>
+        <FaRegBookmark
+          size={22}
+          color="#bfbfbf"
+          className={styles.SaveProductIcon}
+        />
       </div>
     </div>
   );

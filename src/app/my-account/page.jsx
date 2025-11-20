@@ -12,7 +12,7 @@ import AccStatementView from "../../sections/myaccount/accountStatement/AccState
 import Orders from "../../sections/myaccount/orders/OrdersView";
 
 const MyAccount = () => {
-  const [menuActive, setMenuActive] = useState("Overview");
+  const [menuActive, setMenuActive] = useState("Orders");
   return (
     <div className={styles.SectionWrapper}>
       <Titlebar />
