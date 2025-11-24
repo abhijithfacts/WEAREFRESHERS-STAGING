@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./myaccount.module.css";
 import Titlebar from "../../sections/myaccount/Titlebar/Titlebar";
 import Sidemenu from "../../sections/myaccount/sidemenu/Sidemenu";
@@ -10,9 +10,20 @@ import PersonalDetails from "../../sections/myaccount/personalDetails/PersonalDe
 import PasswordManagement from "../../sections/myaccount/passwordManagement/PasswordManagement";
 import AccStatementView from "../../sections/myaccount/accountStatement/AccStatementView";
 import Orders from "../../sections/myaccount/orders/OrdersView";
+import { useSession, signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const MyAccount = () => {
   const [menuActive, setMenuActive] = useState("Orders");
+  const { data: session, status } = useSession();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (status === "unauthenticated") {
+      router.back();
+    }
+  }, [session]);
+
   return (
     <div className={styles.SectionWrapper}>
       <Titlebar />

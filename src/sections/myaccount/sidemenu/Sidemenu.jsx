@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import styles from "./sidemenu.module.css";
 import Image from "next/image";
+import { useSession, signOut } from "next-auth/react"; // Ho
+import { useRouter } from "next/navigation";
 
 const MenuItems = [
   { icon: "/icons/user.png", width: "20px", height: "20px", menu: "Overview" },
@@ -27,6 +30,16 @@ const MenuItems = [
 ];
 
 const Sidemenu = ({ getActiveMenu, menuActive }) => {
+  const { data: session, status } = useSession();
+  const router = useRouter();
+
+  const handleLogout = (item) => {
+    if (item === "Logout" && status === "authenticated") {
+      signOut();
+      router.push("/auth/login");
+    }
+  };
+
   return (
     <div className={styles.MenuContainer}>
       {MenuItems.map((item, i) => {
@@ -38,6 +51,7 @@ const Sidemenu = ({ getActiveMenu, menuActive }) => {
             key={i}
             onClick={() => {
               getActiveMenu(item.menu);
+              handleLogout(item.menu);
             }}
           >
             <Image

@@ -1,18 +1,29 @@
 "use client";
-import { useState, useActionState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MdArrowForwardIos } from "react-icons/md";
 import styles from "../styles/LoginForm.module.css";
-import { signup } from "../app/actions/auth";
-
+import { signIn, getProviders } from "next-auth/react";
 
 export function LoginForm({ className, ...props }) {
-  const [state, action, pending] = useActionState(signup, undefined);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = async () => {};
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    const result = await signIn("credentials", {
+      email,
+      password,
+      callbackUrl: "/",
+    });
+
+    if (result?.error) {
+      console.error(result.error);
+    } else {
+      console.log(result);
+    }
+  };
 
   return (
     <div className={styles.container} {...props}>
@@ -55,6 +66,7 @@ export function LoginForm({ className, ...props }) {
                   onChange={(e) => setPassword(e.target.value)}
                   required
                   className={styles.input}
+                  autoComplete="current-password"
                 />
               </div>
               <div className={styles.linksRow}>

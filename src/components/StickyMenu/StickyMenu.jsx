@@ -1,9 +1,23 @@
+"use client";
 import React from "react";
 import styles from "./stickymenu.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const StickyMenu = () => {
+  const { data: session, status } = useSession();
+  const router = useRouter();
+
+  const handleProfileClick = () => {
+    if (!session || status === "unauthenticated") {
+      router.push("/auth/login");
+    } else {
+      router.push("/my-account");
+    }
+  };
+
   return (
     <div className={styles.menuWrapper}>
       <Link href={"/search"}>
@@ -16,7 +30,7 @@ const StickyMenu = () => {
         />
       </Link>
 
-      <Link href={"/my-account"}>
+      <div onClick={handleProfileClick}>
         <Image
           className={styles.icon}
           alt="icon-user"
@@ -24,7 +38,7 @@ const StickyMenu = () => {
           height={20}
           src="/icons/user.png"
         />
-      </Link>
+      </div>
       <Link href={"/cart"}>
         <Image
           className={styles.icon}

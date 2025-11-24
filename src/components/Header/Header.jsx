@@ -1,17 +1,24 @@
 "use client";
-import React, {useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./headerStyles.module.css";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import MobileMenu from "../MobileMenu/MobileMenu";
+import { useSession } from "next-auth/react";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const { data: session, status } = useSession();
+
   const pathname = usePathname();
 
   useEffect(() => {
     setShowMobileMenu(false);
+    if (pathname === "/auth/login") {
+      setShowHeader(false);
+    }
   }, [pathname]);
   return (
     <>
@@ -19,7 +26,10 @@ const Header = () => {
         showMobileMenu={showMobileMenu}
         closeMenu={() => setShowMobileMenu(false)}
       />
-      <div className={styles.headerContainer}>
+      <div
+        className={styles.headerContainer}
+        style={{ display: !showHeader && "none" }}
+      >
         <div className={styles.headerTopSection}>
           <div
             className={styles.burgerMenu}
@@ -44,7 +54,10 @@ const Header = () => {
               quality={100}
             />
           </Link>
-          <h5 className={styles.userGreet}>Welcome FRESHER USER 123</h5>
+          {session && (
+            <h5 className={styles.userGreet}>Welcome {session?.user?.name}</h5>
+          )}
+
           <div className={styles.mobileAvatar}>
             <Image
               className={styles.userIcon}
