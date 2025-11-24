@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px and max-width:1024px) {
   .CardWrapper {
     padding: 20px;
     display: flex;

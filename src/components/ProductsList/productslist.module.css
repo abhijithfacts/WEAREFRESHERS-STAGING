@@ -32,12 +32,12 @@
     justify-content: center;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px and max-width:1024px) {
   .ProductsContainer {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr) !important;
-    gap:20px;
+    gap: 20px;
     padding: 10px;
     background: #f5f6f8;
   }

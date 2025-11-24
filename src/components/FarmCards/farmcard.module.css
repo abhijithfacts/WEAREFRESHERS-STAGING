@@ -47,7 +47,7 @@
   .cardButton {
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px and max-width:1024px) {
   .cardWrapper {
     max-width: 100%;
     background: #fff;

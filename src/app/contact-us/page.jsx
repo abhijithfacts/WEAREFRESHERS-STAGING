@@ -11,7 +11,7 @@ const ContactUs = () => {
     <div>
       <StickyMenu />
       <CommonHeroBanner
-        image="/images/sign-up2.jpg"
+        image="/images/sign-up2.webp"
         text="Let’s Get in Touch"
       />
       <div className={styles.ContactInfoCards}>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Button from "../Buttons/Button";
 
 const CommonHeroBanner = ({
-  image = "/images/1.jpg",
+  image = "/images/1.webp",
   text = "",
   showButtons = true,
 }) => {

@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
   .heroBackground {
-    /* background-image: url("/images/1.jpg"); */
-    background-image: url("/images/Fresher Assets-33.png");
+    /* background-image: url("/images/1.webp"); */
+    background-image: url("/images/2.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,9 +38,9 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px and max-width:1024px) {
   .heroBackground {
-    background-image: url("/images/Fresher Assets-33.png");
+    background-image: url("/images/Fresher Assets-33.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -80,9 +80,9 @@
 
 @media (min-width: 1024px) {
   .heroBackground {
-    /* background-image: url("/images/1.jpg"); */
-    background-image: url("/images/2.jpg");
-    /* background-image: url("/images/Fresher Assets-33.png"); */
+    /* background-image: url("/images/1.webp"); */
+    background-image: url("/images/2.webp");
+    /* background-image: url("/images/Fresher Assets-33.webp"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -11,14 +11,16 @@ import { useMediaQuery } from "@mui/material";
 
 const AboutPage = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
-  const isTablet = useMediaQuery("(min-width: 768px) and (max-width: 1024px)");
+  const isTablet = useMediaQuery(
+    "(min-width: 768px and max-width:1024px) and (max-width: 1024px)"
+  );
   const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   return (
     <>
       <StickyMenu />
       <CommonHeroBanner
-        image="/images/1.jpg"
+        image="/images/Fresher Assets-15.webp"
         text="Bringing Farm-Fresh Flowers to Your Business
 "
       />
@@ -58,7 +60,7 @@ const AboutPage = () => {
       )}
 
       <OurStory />
-      <SignUpToday image="/images/sign-up2.jpg" />
+      <SignUpToday image="/images/sign-up2.webp" />
     </>
   );
 };

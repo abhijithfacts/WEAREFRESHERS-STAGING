@@ -82,7 +82,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px and max-width:1024px) {
   .mapWrapper {
     width: 100%;
     max-width: 768px;

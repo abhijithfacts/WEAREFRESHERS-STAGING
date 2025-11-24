@@ -47,7 +47,7 @@ const Cards = () => {
     <div className={styles.card}>
       <Image
         className={styles.cardImage}
-        src="/images/card.jpg"
+        src="/images/card.webp"
         alt="card-image"
         width={600}
         height={600}

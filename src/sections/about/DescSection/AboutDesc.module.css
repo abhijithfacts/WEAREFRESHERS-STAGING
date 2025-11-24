@@ -108,7 +108,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px and max-width:1024px) {
   .titleContainerMobile {
     display: none;
   }
