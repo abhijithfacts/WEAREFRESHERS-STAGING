@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import createHttpRequest from "../../services/http/request";
 
 const StickyMenu = () => {
   const { data: session, status } = useSession();
@@ -18,9 +19,19 @@ const StickyMenu = () => {
     }
   };
 
+  const handleSearchClick = async () => {
+    const reqBody = {
+      containerId: ["GetWebUser"],
+      userId: null,
+    };
+    const response = await createHttpRequest("/api/checkpost", "open", reqBody);
+    console.log(response, "response");
+  };
+
   return (
     <div className={styles.menuWrapper}>
-      <Link href={"/search"}>
+      {/* <Link href={"/search"}> */}
+      <div onClick={handleSearchClick}>
         <Image
           className={styles.icon}
           alt="icon-search"
@@ -28,7 +39,8 @@ const StickyMenu = () => {
           height={20}
           src="/icons/search.png"
         />
-      </Link>
+      </div>
+      {/* </Link> */}
 
       <div onClick={handleProfileClick}>
         <Image

@@ -9,12 +9,18 @@ import { signIn, getProviders } from "next-auth/react";
 export function LoginForm({ className, ...props }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [keepMeSignedIn, setKeepMeSignedIn] = useState(false);
+
+  const handleSessionDuration = (e) => {
+    setKeepMeSignedIn(e.target.checked);
+  };
 
   const handleLogin = async (e) => {
     e.preventDefault();
     const result = await signIn("credentials", {
       email,
       password,
+      remember: keepMeSignedIn,
       callbackUrl: "/",
     });
 
@@ -75,6 +81,7 @@ export function LoginForm({ className, ...props }) {
                     id="remember"
                     type="checkbox"
                     className={styles.checkbox}
+                    onChange={handleSessionDuration}
                   />
                   <label htmlFor="remember" className={styles.checkboxLabel}>
                     Keep me signed in

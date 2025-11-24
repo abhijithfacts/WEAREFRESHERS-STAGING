@@ -45,18 +45,32 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id;
+        token.remember = user.remember;
+        token.lastRefresh = Date.now();
       }
+
+      // Rolling extension
+      const now = Date.now();
+      const oneDay = 24 * 60 * 60 * 1000;
+
+      if (token.remember && now - token.lastRefresh > oneDay) {
+        token.lastRefresh = now;
+      }
+
       return token;
     },
+
     async session({ session, token }) {
-      if (token) {
-        session.user.id = token.id;
-      }
+      session.user.id = token.id;
       return session;
     },
   },
   pages: {
     signIn: "/auth/login",
   },
-  session: { strategy: "jwt" },
+  session: {
+    strategy: "jwt",
+    maxAge: 30 * 24 * 60 * 60, 
+    updateAge: 24 * 60 * 60,
+  },
 });

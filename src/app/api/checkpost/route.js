@@ -14,8 +14,12 @@ export async function POST(request) {
       .request()
       .input("routerKey", sql.NVarChar, routerKey)
       .query(
-        "SELECT * FROM UISectionComponents WHERE ContainerId = @routerKey AND CONTROLLER_NAME = 'secure'"
+        "SELECT * FROM UISectionComponents WHERE ContainerId = @routerKey"
       );
+
+    //   .query(
+    //     "SELECT * FROM UISectionComponents WHERE ContainerId = @routerKey AND CONTROLLER_NAME = 'secure'"
+    //   );
 
     const resultObject = getProcudureDetails?.recordsets?.[0]?.[0];
     if (!resultObject) {
