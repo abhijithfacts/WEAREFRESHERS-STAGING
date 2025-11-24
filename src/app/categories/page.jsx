@@ -13,7 +13,7 @@ const Categories = () => {
       <StickyMenu />
       <div className={styles.CategoriesPage}>
         <CommonHeroBanner
-          image="/images/categories-hero.jpg"
+          image="/images/categories-hero.webp"
           text="Shop by Category"
           showButtons={false}
         />
