@@ -1,9 +1,18 @@
 import React from "react";
 import styles from "./buttonStyles.module.css";
+import CircularProgress from "@mui/material/CircularProgress";
 
-const Button = ({ text, bg, miniButton = false, nano = false }) => {
+const Button = ({
+  text,
+  bg,
+  miniButton = false,
+  nano = false,
+  loading = false,
+  onClick,
+}) => {
   return (
     <button
+      onClick={onClick}
       style={{
         background: bg,
         padding: miniButton && "10px 30px",
@@ -14,7 +23,7 @@ const Button = ({ text, bg, miniButton = false, nano = false }) => {
       }}
       className={styles.styledButton}
     >
-      {text}
+      {loading ? <CircularProgress color="#000" size={18} /> : text}
     </button>
   );
 };

@@ -5,11 +5,13 @@ import Image from "next/image";
 import { MdArrowForwardIos } from "react-icons/md";
 import styles from "../styles/LoginForm.module.css";
 import { signIn, getProviders } from "next-auth/react";
+import Button from "./Buttons/Button";
 
 export function LoginForm({ className, ...props }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [keepMeSignedIn, setKeepMeSignedIn] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSessionDuration = (e) => {
     setKeepMeSignedIn(e.target.checked);
@@ -17,17 +19,18 @@ export function LoginForm({ className, ...props }) {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const result = await signIn("credentials", {
-      email,
-      password,
-      remember: keepMeSignedIn,
-      callbackUrl: "/",
-    });
-
-    if (result?.error) {
-      console.error(result.error);
-    } else {
-      console.log(result);
+    try {
+      setLoading(true);
+      const result = await signIn("credentials", {
+        email,
+        password,
+        remember: keepMeSignedIn,
+        callbackUrl: "/",
+      });
+    } catch (e) {
+      console.log(e);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -92,13 +95,14 @@ export function LoginForm({ className, ...props }) {
                 </Link>
               </div>
               <div className={styles.buttonWrapper}>
-                <button
+                <Button
                   type="submit"
                   className={styles.button}
                   onClick={handleLogin}
-                >
-                  Log In
-                </button>
+                  loading={loading}
+                  text={"Log In"}
+                  bg={"#c9deb1"}
+                />
               </div>
             </form>
           </div>

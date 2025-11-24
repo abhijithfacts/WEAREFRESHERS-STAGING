@@ -6,11 +6,15 @@ import Link from "next/link";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import { useSession } from "next-auth/react";
 import { usePathname } from "next/navigation";
+import { TiThMenu } from "react-icons/ti";
+import { FaRegUser } from "react-icons/fa6";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showHeader, setShowHeader] = useState(true);
   const { data: session, status } = useSession();
+  const router = useRouter();
 
   const pathname = usePathname();
 
@@ -20,6 +24,15 @@ const Header = () => {
       setShowHeader(false);
     }
   }, [pathname]);
+
+  const handleProfileClick = () => {
+    if (!session || status === "unauthenticated") {
+      router.push("/auth/login");
+    } else {
+      router.push("/my-account");
+    }
+  };
+
   return (
     <>
       <MobileMenu
@@ -35,14 +48,15 @@ const Header = () => {
             className={styles.burgerMenu}
             onClick={() => setShowMobileMenu((prev) => !prev)}
           >
-            <Image
+            {/* <Image
               className={styles.burgerImage}
               alt="nav-burger"
               src="/icons/burger.png"
               width={40}
               height={40}
               quality={100}
-            />
+            /> */}
+            <TiThMenu size={32} />
           </div>
           <Link href={"/"} className={styles.linkUnstyled}>
             <Image
@@ -58,15 +72,16 @@ const Header = () => {
             <h5 className={styles.userGreet}>Welcome {session?.user?.name}</h5>
           )}
 
-          <div className={styles.mobileAvatar}>
-            <Image
+          <div className={styles.mobileAvatar} onClick={handleProfileClick}>
+            {/* <Image
               className={styles.userIcon}
               alt="user-icon"
               width={40}
               height={40}
               src="/icons/user.png"
               quality={100}
-            />
+            /> */}
+            <FaRegUser size={30} />
           </div>
         </div>
         <div className={styles.headerNavSection}>

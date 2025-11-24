@@ -3,6 +3,7 @@ import styles from "./Mobilemenu.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+
 const MobileMenu = ({ showMobileMenu, closeMenu }) => {
   return (
     <div className={showMobileMenu ? styles.MenuBackdrop : ""}>
