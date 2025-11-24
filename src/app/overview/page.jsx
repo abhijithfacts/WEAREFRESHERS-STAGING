@@ -30,7 +30,7 @@ const Overview = () => {
       <FindFarms />
       {isTablet ? (
         <CommonCTA
-          image="/images/find-farms-cta.png"
+          image="/images/find-farms-cta.webp"
           imageDir="right"
           heading={"Need Help?"}
           paragraph={
@@ -39,7 +39,7 @@ const Overview = () => {
         />
       ) : (
         <CommonCTA
-          image="/images/find-farms-cta.png"
+          image="/images/find-farms-cta.webp"
           imageDir="left"
           heading={"Need Help?"}
           paragraph={

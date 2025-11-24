@@ -41,7 +41,7 @@ const AboutPage = () => {
         <CommonCTA
           imageDir="right"
           heading={"Common CTA"}
-          image="/images/about-cta-2.png"
+          image="/images/about-cta-2.webp"
           paragraph={
             "Sub heading goes here Max two lines Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           }
@@ -50,7 +50,7 @@ const AboutPage = () => {
         <CommonCTA
           imageDir="left"
           heading={"Common CTA"}
-          image="/images/about-cta-2.png"
+          image="/images/about-cta-2.webp"
           paragraph={
             "Sub heading goes here Max two lines Lorem ipsum dolor sit amet, consectetur adipiscing elit"
           }
