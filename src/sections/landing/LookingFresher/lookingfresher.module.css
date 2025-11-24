@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
   .sectionContainer {
     width: 100%;
-    padding: 40px;
+    padding: 20px;
     background: #fff;
     background: linear-gradient(
         rgba(255, 255, 255, 0.73),
