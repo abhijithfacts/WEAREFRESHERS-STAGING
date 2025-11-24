@@ -27,6 +27,35 @@
   }
 }
 
+@media (min-width: 768px) {
+  .secionTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .secionTitle {
+    margin: 0px;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    color: #000;
+    text-align: center;
+  }
+  .greenLine {
+    display: none;
+  }
+  .paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #000;
+  }
+}
 @media (min-width: 1024px) {
   .secionTitleContainer {
     display: flex;

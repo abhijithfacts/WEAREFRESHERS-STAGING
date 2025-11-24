@@ -102,6 +102,109 @@
   }
 }
 
+@media (min-width: 768px) {
+  .fvContainer {
+    background: #fff;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .fvParagraphWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+    position: relative;
+  }
+  .titleContainer {
+    display: none;
+  }
+
+  .titleContainerMobile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .fvTitleTop {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #000;
+  }
+
+  .fvTitleBottom {
+    display: none;
+  }
+
+  .fvGreenLineContainer {
+    display: none;
+  }
+
+  .fvGreenLine {
+    display: none;
+  }
+
+  .greenLineText {
+    display: none;
+  }
+
+  .fvParagraph {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 2px;
+    color: #000;
+  }
+
+  .cardsSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .cardSeparator {
+    display: none;
+  }
+
+  .cardHeading {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .cardImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardParagraph {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 2px;
+    color: #000;
+  }
+}
 @media (min-width: 1024px) {
   .titleContainerMobile {
     display: none;

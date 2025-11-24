@@ -108,6 +108,128 @@
   }
 }
 
+@media (min-width: 768px) {
+  .titleContainerMobile {
+    display: none;
+  }
+  .titleContainer {
+    width: 100%;
+  }
+  .ADSContainer {
+    background: #fff;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .flexContainer {
+    display: flex;
+  }
+  .columnSec {
+  }
+  .ADStitleWrap {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .ADSTitleTop {
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #000;
+  }
+
+  .ADSTitleBottom {
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #000;
+  }
+
+  .ADSGreenLineContainer {
+    display: none;
+  }
+
+  .ADSGreenLine {
+    min-height: 3px;
+    max-height: 3px;
+    min-width: 300px;
+    background: #c9deb1;
+  }
+
+  .greenLineText {
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #c9deb1;
+  }
+
+  .ADSParagraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+    color: #000;
+  }
+
+  .cardsSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .card {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .cardSeparator {
+    min-width: 2px;
+    background: #c9deb1;
+    min-height: 450px;
+  }
+
+  .cardHeading {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .cardImage {
+    display: none;
+  }
+
+  .cardParagraph {
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+
+  .ADSimage {
+    display: none;
+  }
+
+  .buttonHolder {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
 @media (min-width: 1024px) {
   .titleContainerMobile {
     display: none;

@@ -8,6 +8,17 @@
     gap: 20px;
   }
 }
+@media (min-width: 768px) {
+  .CategoriesPage {
+    background: #f5f6f8;
+  }
+  .ProductsList {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    gap: 20px;
+  }
+}
 
 @media (min-width: 1024px) {
   .CategoriesPage {

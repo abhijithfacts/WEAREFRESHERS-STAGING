@@ -1,3 +1,119 @@
+@media (max-width: 768px) {
+  .SectionWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #f5f6f8;
+  }
+
+  .DetailsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  .TableWrapper {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .SectionHeading {
+    margin: 0px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+
+  .FlexContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .Summary {
+    margin: 0px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #6a6a6a;
+  }
+
+  .ButtonsHolder {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .GreenStrip {
+    height: 40px;
+    background: #c9deb1;
+    min-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .SectionWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background: #f5f6f8;
+  }
+
+  .DetailsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    padding: 0px 40px;
+  }
+
+  .TableWrapper {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .SectionHeading {
+    margin: 0px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+
+  .FlexContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .Summary {
+    margin: 0px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #6a6a6a;
+  }
+
+  .ButtonsHolder {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .GreenStrip {
+    height: 40px;
+    background: #c9deb1;
+    min-width: 100%;
+  }
+}
+
+
 @media (min-width: 1024px) {
   .SectionWrapper {
     width: 100%;

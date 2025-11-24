@@ -11,6 +11,21 @@
     cursor: pointer;
   }
 }
+
+@media (min-width: 768px) {
+  .styledButton {
+    width: auto;
+    padding: 12px 30px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
 @media (min-width: 1024px) {
   .styledButton {
     width: auto;

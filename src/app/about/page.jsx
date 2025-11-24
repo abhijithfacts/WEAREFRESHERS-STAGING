@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import CommonHeroBanner from "../../components/CommonHeroBanner/CommonHeroBanner";
 import CommonCTA from "../../components/CommonCTAsection/CommonCTA";
@@ -6,8 +7,13 @@ import WhyChooseUs from "../../sections/about/whyChooseUs/WhyChooseUs";
 import OurStory from "../../sections/about/ourStorySection/OurStory";
 import StickyMenu from "../../components/StickyMenu/StickyMenu";
 import SignUpToday from "../../sections/landing/SignUpToday/SignUpToday";
+import { useMediaQuery } from "@mui/material";
 
 const AboutPage = () => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isTablet = useMediaQuery("(min-width: 768px) and (max-width: 1024px)");
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
+
   return (
     <>
       <StickyMenu />
@@ -31,14 +37,26 @@ const AboutPage = () => {
         }
       />
       <WhyChooseUs />
-      <CommonCTA
-        imageDir="left"
-        heading={"Common CTA"}
-        image="/images/about-cta-2.png"
-        paragraph={
-          "Sub heading goes here Max two lines Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-        }
-      />
+      {isTablet ? (
+        <CommonCTA
+          imageDir="right"
+          heading={"Common CTA"}
+          image="/images/about-cta-2.png"
+          paragraph={
+            "Sub heading goes here Max two lines Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          }
+        />
+      ) : (
+        <CommonCTA
+          imageDir="left"
+          heading={"Common CTA"}
+          image="/images/about-cta-2.png"
+          paragraph={
+            "Sub heading goes here Max two lines Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          }
+        />
+      )}
+
       <OurStory />
       <SignUpToday image="/images/sign-up2.jpg" />
     </>

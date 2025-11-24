@@ -1,3 +1,22 @@
+@media (max-width: 768px) {
+  .copyrightContainer {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    background: #c9deb1;
+    padding: 8px 0px;
+  }
+
+  .copyrightPara {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 2px;
+    color: #000;
+  }
+}
+
 @media (min-width: 1024px) {
   .copyrightContainer {
     display: flex;

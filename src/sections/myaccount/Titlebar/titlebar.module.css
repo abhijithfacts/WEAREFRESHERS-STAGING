@@ -20,6 +20,27 @@
   }
 }
 
+@media (min-width: 768px) {
+  .SectionWrap {
+    display: flex;
+    padding: 10px 20px;
+    gap: 10px;
+    background: #c9deb1;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .UserIcon {
+    width: 22px;
+    height: 25px;
+  }
+  .UserName {
+    margin: 0px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+}
 @media (min-width: 1024px) {
   .SectionWrap {
     display: flex;

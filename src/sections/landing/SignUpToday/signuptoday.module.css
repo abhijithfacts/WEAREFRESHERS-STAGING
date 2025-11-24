@@ -66,6 +66,74 @@
   }
 }
 
+@media (min-width: 768px) {
+  .supTodayContainer {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 30px;
+    overflow: hidden;
+  }
+  .supTodayContainer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.44);
+    z-index: 1;
+  }
+  .supTodayContainer > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .supTodayContenHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 40px;
+  }
+
+  .supTitle {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .supInput {
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: #ffffff9f;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    outline: none;
+    width: 100%;
+  }
+
+  .supInput::placeholder {
+    color: white;
+    opacity: 1;
+  }
+
+  .supButton {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media (min-width: 1024px) {
   .supTodayContainer {
     position: relative;

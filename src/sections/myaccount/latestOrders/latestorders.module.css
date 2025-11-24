@@ -37,6 +37,38 @@
   }
 }
 
+@media (min-width: 768px) {
+  .SectionWrapper {
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .SectionElse {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .SectionHeading {
+    margin: 0px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+
+  .SectionPara {
+    margin: 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+}
 @media (min-width: 1024px) {
   .SectionWrapper {
     width: 100%;

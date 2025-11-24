@@ -90,6 +90,98 @@
     color: #000;
   }
 }
+@media (min-width: 768px) {
+  .HSCcontainer {
+    width: 100%;
+    padding: 20px;
+  }
+  .HSCsecionTitleContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .HSCheading {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #000;
+    text-align: center;
+  }
+  .GreenLine {
+    display: none;
+  }
+
+  .ScrollButton {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  .ArrowIcons {
+    width: 13px;
+    cursor: pointer;
+    height: 20px;
+  }
+  .ScrollItems {
+    display: flex;
+    padding: 20px 0px;
+    gap: 40px;
+    align-items: center;
+    overflow-x: scroll;
+  }
+
+  .ScrollItems,
+  .dropdown-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .ScrollItems::-webkit-scrollbar,
+  .dropdown-list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+  }
+
+  .ItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .Item {
+    min-width: 160px;
+    min-height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #c9deb1;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .Item:hover {
+    transform: scale(1.05);
+  }
+
+  .ItemImage {
+    width: 120px;
+    height: auto;
+  }
+
+  .ItemName {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #000;
+  }
+}
 
 @media (min-width: 1024px) {
   .HSCcontainer {

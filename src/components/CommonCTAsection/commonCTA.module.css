@@ -41,6 +41,47 @@
   }
 }
 
+@media (min-width: 768px) {
+  .commonCTAcontainer {
+    width: 100%;
+    padding: 40px;
+    background: #c9deb1;
+    max-height: 400px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .commonCtaLeftSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .commonCtaHeading {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .commonCtaPara {
+    font-size: 18px;
+    line-height: 30px;
+    width: 80%;
+    letter-spacing: 1px;
+  }
+
+  .commonCtaButtonHolder {
+    width: 300px;
+  }
+
+  .commonCtaRightSection {
+  }
+
+
+}
+
 @media (min-width: 1024px) {
   .commonCTAcontainer {
     width: 100%;
@@ -80,6 +121,5 @@
   }
 
   .commonCtaImage {
-
   }
 }

@@ -144,6 +144,152 @@
     gap: 10px;
   }
 }
+@media (min-width: 768px) {
+  .FilterWrapper {
+    display: none;
+  }
+
+  .SettingsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .SearchSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .HeadingStyles {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .SearchInput {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #c9deb1;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+  }
+
+  .SettingsBox {
+    background: #d9d9d9;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .LocationSelect {
+    background: #ebebeb;
+    padding: 10px;
+    border: 1px solid #c9deb1;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+  }
+  .DeliveryDateSelector {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .DeliveryLocationSelector {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .ClearSearch {
+    margin: 0px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .SubHeading {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
+  }
+  .ConfirmCheckBox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .CheckBoxElement {
+    height: 15px;
+    width: 15px;
+  }
+  .GreyText {
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #6a6a6a;
+  }
+
+  .IconsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .FilterIcons {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+  }
+  .AttributesFilterSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .AttributeItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .AttributeOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .AtrOption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .OptionSelectIndicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .FlexDiv {
+    display: flex;
+    gap: 10px;
+  }
+}
 
 @media (min-width: 1024px) {
   .FilterWrapper {

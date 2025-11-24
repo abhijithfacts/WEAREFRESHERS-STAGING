@@ -1,9 +1,15 @@
+"use client";
+
 import React from "react";
 import styles from "./findfarms.module.css";
 import FarmCards from "../../../components/FarmCards/FarmCards";
 import Button from "../../../components/Buttons/Button";
+import { useMediaQuery } from "@mui/material";
 
 const FindFarms = () => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isTablet = useMediaQuery("(min-width: 768px) and (max-width: 1024px)");
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
   return (
     <div className={styles.wrapper}>
       <div className={styles.secionTitleContainer}>
