@@ -37,7 +37,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
   .SectionWrapper {
     width: 100%;
     background: #f0f0f0;
