@@ -16,7 +16,6 @@ export function LoginForm({ className, ...props }) {
   const handleSessionDuration = (e) => {
     setKeepMeSignedIn(e.target.checked);
   };
-
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
@@ -36,13 +35,9 @@ export function LoginForm({ className, ...props }) {
 
   return (
     <div className={styles.container} {...props}>
-      {/* Background */}
       <div className={styles.background} />
-      {/* Overlay (optional for slight tint) */}
       <div className={styles.overlay} />
-      {/* Content */}
       <div className={styles.content}>
-        {/* Logo */}
         <Image
           src="/images/desktop_login_logo.png"
           alt="logo"
@@ -50,13 +45,10 @@ export function LoginForm({ className, ...props }) {
           height={500}
           className={styles.logo}
         />
-        {/* Card */}
         <div className={styles.card}>
-          {/* CardHeader */}
           <div className={styles.cardHeader}>
             <h2 className={styles.cardTitle}>Sign In</h2>
           </div>
-          {/* CardContent */}
           <div className={styles.cardContent}>
             <form className={styles.form}>
               <div className={styles.formGroup}>
@@ -106,7 +98,6 @@ export function LoginForm({ className, ...props }) {
               </div>
             </form>
           </div>
-          {/* CardFooter */}
           <div className={styles.cardFooter}>
             <div className={styles.footerText}>
               <p className={styles.noAccount}>No account?</p>

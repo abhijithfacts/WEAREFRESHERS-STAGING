@@ -18,7 +18,6 @@ const StickyMenu = () => {
       router.push("/my-account");
     }
   };
-
   const handleSearchClick = async () => {
     const reqBody = {
       containerId: ["GetWebUser"],

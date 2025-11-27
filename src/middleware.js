@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 
 export function middleware(req) {
-  // Example: redirect if not logged in
   const url = req.nextUrl.clone();
 
   if (req.nextUrl.pathname.startsWith("/dashboard")) {
@@ -15,7 +14,6 @@ export function middleware(req) {
   return NextResponse.next();
 }
 
-// optional: which paths to run middleware on
 export const config = {
   matcher: ["/dashboard/:path*"],
 };
