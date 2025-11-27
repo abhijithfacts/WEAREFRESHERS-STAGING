@@ -1,0 +1,141 @@
+@media (max-width: 768px) {
+  .SearchWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  .InputWrap {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .SearchInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+  .SearchIcon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+
+  .SearchResult {
+    margin-top: 70px;
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .SearchWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  .InputWrap {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .SearchInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  .SearchIcon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+
+  .SearchResult {
+    margin-top: 70px;
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .SearchWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  .InputWrap {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .SearchInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  .SearchIcon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+
+  .SearchResult {
+    margin-top: 70px;
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -3,6 +3,9 @@ import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import sql from "mssql";
 import bcrypt from "bcryptjs";
+import createHttpRequest from "../services/http/request";
+
+
 
 const users = [
   {
@@ -12,6 +15,15 @@ const users = [
     name: "Demo User1",
   },
 ];
+
+const getWebUsers = async(email) => {
+  const reqBody = {
+  containerId: ["GetWebUser"],
+  userId: null,
+};
+const response = await createHttpRequest("/api/checkpost", "open", reqBody);
+console.log(response, "response");
+}
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [
@@ -70,7 +82,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   },
   session: {
     strategy: "jwt",
-    maxAge: 30 * 24 * 60 * 60, 
+    maxAge: 30 * 24 * 60 * 60,
     updateAge: 24 * 60 * 60,
   },
 });
