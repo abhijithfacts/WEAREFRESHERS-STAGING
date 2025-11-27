@@ -109,7 +109,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) and (max-width: 1023px) {
   .titleContainerMobile {
     display: none;
   }
@@ -235,6 +235,11 @@
   .titleContainerMobile {
     display: none;
   }
+
+  .titleContainer {
+    display: block;
+  }
+
   .ADSContainer {
     background: #fff;
     width: 100%;
@@ -280,6 +285,7 @@
     max-height: 3px;
     min-width: 300px;
     position: relative;
+    width: 55%;
   }
 
   .ADSGreenLine {
@@ -294,6 +300,7 @@
     font-weight: 400;
     letter-spacing: 1px;
     font-size: 16px;
+    text-wrap: nowrap;
     color: #c9deb1;
   }
 
@@ -301,6 +308,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+    text-align: left;
     letter-spacing: 1px;
     color: #000;
   }
@@ -343,12 +351,14 @@
   }
 
   .ADSimage {
+    display: block;
     min-width: 600px;
     height: 300px;
   }
 
   .buttonHolder {
     display: flex;
+    justify-content: start;
     gap: 20px;
   }
 }

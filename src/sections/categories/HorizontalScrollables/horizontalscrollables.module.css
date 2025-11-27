@@ -90,7 +90,7 @@
     color: #000;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .HSCcontainer {
     width: 100%;
     padding: 20px;

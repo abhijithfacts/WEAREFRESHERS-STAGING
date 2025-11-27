@@ -9,7 +9,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .PlaceOrderSection {
     background: #fff;
     width: 100%;

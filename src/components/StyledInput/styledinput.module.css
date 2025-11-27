@@ -30,7 +30,7 @@
     letter-spacing: 1px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .styledInput {
     width: 100%;
     min-width: 160px;
