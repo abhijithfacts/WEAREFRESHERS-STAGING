@@ -1,3 +1,39 @@
+@media (max-width: 1023px) {
+  .QAwrap {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 2px solid #6a6a6a;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .Toggler {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .ToggleIcon {
+    cursor: pointer;
+  }
+  .Qn {
+    margin: 0px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #96a684;
+  }
+
+  .An {
+    margin: 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #000;
+  }
+}
+
 @media (min-width: 1024px) {
   .QAwrap {
     background: #fff;
