@@ -4,17 +4,22 @@ import Image from "next/image";
 import Button from "../Buttons/Button";
 import Link from "next/link";
 import { FaRegBookmark } from "react-icons/fa6";
+import { LuDiameter } from "react-icons/lu";
 
-const ProductCard = () => {
+const ProductCard = ({
+  productName = "Eucalyptus Cinerea 300gm",
+  farmName = "Kenya Farm",
+  productImage = "/images/scroll-image.png",
+}) => {
   return (
     <div className={styles.CardWrapper}>
       <div className={styles.CardTopSection}>
-        <h6 className={styles.ProductName}>Product Name</h6>
-        <h6 className={styles.FarmName}>Farm Name</h6>
+        <h6 className={styles.ProductName}>{productName}</h6>
+        <h6 className={styles.FarmName}>{farmName}</h6>
       </div>
       <div className={styles.ImageSection}>
         <Image
-          src={"/images/product-card-image.png"}
+          src={productImage}
           alt="product-image"
           width={1000}
           height={1000}
@@ -24,7 +29,12 @@ const ProductCard = () => {
       </div>
       <div className={styles.AttributesSection}>
         <div className={styles.AttributeItem}>
-          <Image
+          <LuDiameter
+            size={22}
+            color="#bfbfbf"
+            className={styles.AttributeIcon}
+          />
+          {/* <Image
             className={styles.AttributeIcon}
             src={"/icons/diameter.png"}
             width={300}
@@ -32,7 +42,7 @@ const ProductCard = () => {
             quality={100}
             alt="attribute-icon"
             unoptimized
-          />
+          /> */}
           <p className={styles.AttributeText}>30x50cm</p>
         </div>
       </div>

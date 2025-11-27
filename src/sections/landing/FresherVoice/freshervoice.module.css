@@ -102,7 +102,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .fvContainer {
     background: #fff;
     width: 100%;
@@ -208,6 +208,9 @@
 @media (min-width: 1024px) {
   .titleContainerMobile {
     display: none;
+  }
+  .titleContainer {
+    display: block;
   }
   .fvContainer {
     background: #fff;
