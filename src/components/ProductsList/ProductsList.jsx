@@ -6,7 +6,7 @@ import Button from "../Buttons/Button";
 
 const ProductsList = ({ dtp = 3 }) => {
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       <FilterBar />
       <div
         className={styles.ProductsContainer}

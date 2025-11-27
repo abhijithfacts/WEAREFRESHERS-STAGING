@@ -68,13 +68,22 @@
 
 @media (min-width: 1024px) {
   .ProductsContainer {
-    display: grid;
+    display: flex;
+    justify-content: start;
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
     background: #f5f6f8;
   }
+  /* .ProductsContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background: #f5f6f8;
+  } */
 
   .ItemsText {
     font-size: 16px;

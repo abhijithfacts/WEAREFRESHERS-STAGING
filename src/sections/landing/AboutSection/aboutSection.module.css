@@ -57,6 +57,8 @@
     margin: 0;
     font-size: 25px;
     font-weight: 400;
+    letter-spacing: 2px;
+    color: #000;
   }
 
   .cardParagraph {
@@ -127,6 +129,8 @@
     margin: 0;
     font-size: 25px;
     font-weight: 400;
+    letter-spacing: 2px;
+    color: #000;
   }
 
   .cardParagraph {
@@ -164,6 +168,7 @@
   }
   .titleContainer {
     /* margin-bottom: 30px; */
+    display: block;
   }
 
   .aboutTitleTop {
@@ -185,6 +190,7 @@
   }
 
   .aboutGreenLineContainer {
+    display: block;
     min-height: 3px;
     max-height: 3px;
     min-width: 300px;
@@ -204,13 +210,16 @@
     letter-spacing: 1px;
     font-size: 16px;
     color: #c9deb1;
+    line-height: 24px;
   }
 
   .aboutParagraph {
+    margin-top: 60px;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 1px;
+    text-align: left;
     color: #000;
   }
 
@@ -235,10 +244,15 @@
     margin: 0;
     font-size: 25px;
     font-weight: 400;
+    letter-spacing: 1px;
+    color: #000;
   }
 
   .cardParagraph {
     letter-spacing: 1px;
     font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000;
   }
 }
