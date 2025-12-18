@@ -1,85 +1,98 @@
-import { AuthOptions } from "next-auth";
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import sql from "mssql";
-import bcrypt from "bcryptjs";
+import crypto from "crypto";
 import createHttpRequest from "../services/http/request";
 
+const baseURL = process.env.APP_URL || "http://localhost:3000";
 
-
-const users = [
-  {
-    id: "1",
-    email: "user@example.com",
-    passwordHash: bcrypt.hashSync("password123", 10),
-    name: "Demo User1",
-  },
-];
-
-const getWebUsers = async(email) => {
-  const reqBody = {
-  containerId: ["GetWebUser"],
-  userId: null,
+const hashPassword = (password, salt) => {
+  return crypto
+    .createHash("sha256")
+    .update(password + salt)
+    .digest("hex");
 };
-const response = await createHttpRequest("/api/checkpost", "open", reqBody);
-console.log(response, "response");
-}
 
+/* ----------------------------------------
+   Fetch user from DB
+---------------------------------------- */
+const getWebUser = async (UID) => {
+  const reqBody = {
+    containerId: ["GetWebUser"],
+    UID,
+  };
+
+  const response = await createHttpRequest(
+    baseURL + "/api/checkpost",
+    "open",
+    reqBody
+  );
+
+  return response?.[0] ?? null;
+};
+
+/* ----------------------------------------
+   NextAuth configuration
+---------------------------------------- */
 export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [
     CredentialsProvider({
       name: "credentials",
       credentials: {
-        email: { label: "Email", type: "email" },
+        username: { label: "User ID", type: "text" },
         password: { label: "Password", type: "password" },
       },
+
       async authorize(credentials) {
-        if (!credentials?.email || !credentials?.password) return null;
+        // if (!credentials?.UID || !credentials?.password) {
+        //   return null;
+        // }
 
-        const user = users.find((u) => u.email === credentials.email);
+        const user = await getWebUser(credentials.username);
 
-        if (
-          user &&
-          bcrypt.compareSync(credentials.password, user.passwordHash)
-        ) {
-          return {
-            id: user.id,
-            email: user.email,
-            name: user.name,
-          };
+        console.log(user, "kkkkkkkkkkkkkkkkkkkkkkkkkk");
+
+        if (!user) return null;
+
+        // const inputHash = hashPassword(
+        //   credentials.password,
+        //   user.PARTYMST_DOCNO
+        // );
+        const inputHash = credentials.password;
+
+        if (inputHash !== user.PARTYMST_LOGIN_PWD) {
+          return null;
         }
 
-        return null;
+        return {
+          id: user.PARTYMST_DOCNO,
+          email: user.PARTYMST_EMAIL_ID1,
+          name: user.PARTYMST_DESC,
+        };
       },
     }),
   ],
+
   callbacks: {
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id;
-        token.remember = user.remember;
         token.lastRefresh = Date.now();
       }
-
-      // Rolling extension
-      const now = Date.now();
-      const oneDay = 24 * 60 * 60 * 1000;
-
-      if (token.remember && now - token.lastRefresh > oneDay) {
-        token.lastRefresh = now;
-      }
-
       return token;
     },
 
     async session({ session, token }) {
-      session.user.id = token.id;
+      if (session.user) {
+        session.user.id = token.id;
+      }
       return session;
     },
   },
+
   pages: {
     signIn: "/auth/login",
   },
+
   session: {
     strategy: "jwt",
     maxAge: 30 * 24 * 60 * 60,

@@ -8,7 +8,7 @@ import { signIn, getProviders } from "next-auth/react";
 import Button from "./Buttons/Button";
 
 export function LoginForm({ className, ...props }) {
-  const [email, setEmail] = useState("");
+  const [UID, setUID] = useState("");
   const [password, setPassword] = useState("");
   const [keepMeSignedIn, setKeepMeSignedIn] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -21,7 +21,7 @@ export function LoginForm({ className, ...props }) {
     try {
       setLoading(true);
       const result = await signIn("credentials", {
-        email,
+        username: UID.trim(),
         password,
         remember: keepMeSignedIn,
         callbackUrl: "/",
@@ -53,10 +53,10 @@ export function LoginForm({ className, ...props }) {
             <form className={styles.form}>
               <div className={styles.formGroup}>
                 <input
-                  id="email"
-                  type="email"
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Email address"
+                  id="UID"
+                  type="text"
+                  onChange={(e) => setUID(e.target.value)}
+                  placeholder="User ID"
                   required
                   className={styles.input}
                 />
