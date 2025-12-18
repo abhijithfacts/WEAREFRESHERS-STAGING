@@ -3,8 +3,6 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import crypto from "crypto";
 import createHttpRequest from "../services/http/request";
 
-const baseURL = process.env.APP_URL || "http://localhost:3000";
-
 const hashPassword = (password, salt) => {
   return crypto
     .createHash("sha256")
@@ -21,11 +19,7 @@ const getWebUser = async (UID) => {
     UID,
   };
 
-  const response = await createHttpRequest(
-    baseURL + "/api/checkpost",
-    "open",
-    reqBody
-  );
+  const response = await createHttpRequest("/api/checkpost", "open", reqBody);
 
   return response?.[0] ?? null;
 };
